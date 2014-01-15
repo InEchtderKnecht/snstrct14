@@ -1,21 +1,18 @@
-@media only screen and (min-width:320px) {
-
+@mixin bp($point) {
+  @if $point == 'phone' {
+    @media all and (min-width: 1px) { @content; }
+  }
+  @if $point == 'tablet' {
+    @media all and (min-width: 600px) { @content; }
+  }
+  @if $point == 'desktop' {
+    @media all and (min-width: 1025px) { @content; }
+  }
+  @if $point == 'retina' {
+    @media all and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content }
+  }
 }
-@media only screen and (min-width:480px) {
 
-}
-@media only screen and (min-width:768px) {
-
-}
-@media only screen and (min-width:1024px) {
-
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
-
-}
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 
 }
