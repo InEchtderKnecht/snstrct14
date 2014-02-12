@@ -1,0 +1,25 @@
+
+
+@mixin hover-box($color) {
+	.no-touch & {
+		cursor:pointer;
+		&:hover {
+			background:white;
+			box-shadow: 0 0 0 20px rgb(255, 255, 255), 0 0 0 30px $color;
+		}
+	}
+}
+
+@mixin underlined($color) {
+	border-bottom:0.23em solid $color;
+}
+
+@mixin boxed($color) {
+	box-shadow:0 0 0 2em white, 0 0 0 3em $color;
+}
+
+$landingBlue: rgb(157,191,255);
+
+$green: #71C52E;
+$red: #F0435E;
+$blue: rgb(157,191,255);

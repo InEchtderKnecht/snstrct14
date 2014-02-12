@@ -3,7 +3,7 @@
 //----------------------------------*/
 
 @import 'mixins/_bourbon.scss';
-@import 'mixins/_vendor.scss';
+//@import 'mixins/_vendor.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -19,11 +19,17 @@
 // PARTIALS
 //----------------------------------*/
 
+@import 'partials/_grid.scss';
+@import 'partials/_blackBackground.scss';
+@import 'partials/_transforms.scss';
+@import 'partials/_links.scss';
+@import 'partials/_landingImage.scss';
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
-@import 'partials/_sidebar.scss';
 @import 'partials/_main.scss';
+@import 'partials/_gallery.scss';
 @import 'partials/_footer.scss';
+@import 'partials/_tags.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES

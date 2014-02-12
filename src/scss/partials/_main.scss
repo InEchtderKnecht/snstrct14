@@ -1,3 +1,54 @@
 .main {
+	background:white;
+	overflow:visible;
+	position:relative;
+	margin:0;
+	padding:0;
+	@include transform(translateX(0px));
 
+	padding-top:1em;
+	padding-bottom:3em;
+	@include bp(tablet) {
+		padding-top:1.5em;
+		padding-bottom:3em;
+	}
+	@include bp(laptop) {
+		padding-top:2em;
+		padding-bottom:6em;
+	}
+	@include bp(desktop) {
+		padding-top:3em;
+		padding-bottom:12em;
+	}
+	//.showMenu & {
+	//	//@include transition-duration(9s);
+	//}
+	//@include perspective(600px);
 }
+
+.section {
+	width:100%;
+	display:block;
+	margin:0;
+	padding:0;
+	margin-top:6em;
+	@include bp(tablet) {
+
+	}
+	@include bp(laptop) {
+		margin-top:14em;
+	}
+}
+
+//.main p {
+//	width:100%;
+//	padding-top:2em;
+//	font-size:0.9em;
+//	line-height:1.35em;
+//	@include bp(tablet) {	
+//		float:right;
+//		display:inline-block;
+//		width:50%;
+//		min-width:240px;
+//	}
+//}

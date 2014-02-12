@@ -1,12 +1,15 @@
 @mixin bp($point) {
   @if $point == 'phone' {
-    @media all and (min-width: 1px) { @content; }
+    @media all and (max-width: 599px) { @content; }
   }
   @if $point == 'tablet' {
     @media all and (min-width: 600px) { @content; }
   }
-  @if $point == 'desktop' {
+  @if $point == 'laptop' {
     @media all and (min-width: 1025px) { @content; }
+  }
+  @if $point == 'desktop' {
+    @media all and (min-width: 1441px) { @content; }
   }
   @if $point == 'retina' {
     @media all and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content }

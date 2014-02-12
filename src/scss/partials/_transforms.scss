@@ -1,0 +1,30 @@
+//.nav .wrap {
+//	@include transform(translateX(0));
+//	@include transition(all 0.4s ease);
+//	.showMenu & {
+//		@include transform(translateX($navWidth / 1.5));
+//	}
+//	@include bp(tablet) {
+//		.showMenu & {
+//			@include transform(translateX($navWidth));
+//		}
+//	}
+//}
+//
+//.header .head, .footer, .main {
+//	@include transform(translateX(0));
+//	@include transition-property(transform);
+//	@include transition-duration(0.4s);
+//	@include transition-timing-function(ease);
+//	.showMenu & {
+//		//@include transition-duration(0.8s);
+//		@include transform(translateX($navWidth / 1.5));
+//	}
+//
+//	@include bp(tablet) {
+//		.showMenu & {
+//			@include transform(translateX($navWidth));
+//		}
+//	}
+//
+//}

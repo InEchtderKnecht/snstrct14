@@ -1,10 +1,12 @@
 .header {
-
-}
-.logo {
-  margin: -100px 0 0 -84px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
-
-  }
+	text-align:center;
+	z-index:100;
+	@include bp(tablet) {
+		position:fixed;
+		top:3em;
+		left:0px;
+		width:100%;
+		padding:0;
+		display:block;
+	}
 }

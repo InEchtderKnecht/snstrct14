@@ -1,0 +1,11 @@
+.colorLink {
+	font-family: Asul;
+	font-weight: 700;
+	//font-size: 100%;
+	color:$green;
+	@include underlined($green);
+}
+
+.boxLink {
+	//@include boxed($blue);
+}

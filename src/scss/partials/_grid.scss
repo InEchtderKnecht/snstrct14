@@ -1,0 +1,75 @@
+$grid: 100% / 7;
+
+.width-1 {
+	width:$grid;
+}
+.width-2 {
+	width:$grid * 2;
+}
+.width-3 {
+	width:$grid * 3;
+}
+.width-4 {
+	width:$grid * 4;
+}
+.width-5 {
+	width:$grid * 5;
+}
+.width-6 {
+	width:$grid * 6;
+}
+.width-7 {
+	width:$grid * 7;
+}
+
+.absolute-1, .absolute-2, .absolute-3, .absolute-4, .absolute-5, .absolute-6, .absolute-7 {
+	position:absolute;
+	right:auto;
+}
+.absolute-1 {
+	left:$grid;
+}
+.absolute-2 {
+	left:$grid * 2;
+}
+.absolute-3 {
+	left:$grid * 3;
+}
+.absolute-4 {
+	left:$grid * 4;
+}
+.absolute-5 {
+	left:$grid * 5;
+}
+.absolute-6 {
+	left:$grid * 6;
+}
+.absolute-7 {
+	left:$grid * 7;
+}
+
+.relative-1, .relative-2, .relative-3, .relative-4, .relative-5, .relative-6, .relative-7 {
+	position:relative;
+	margin-right:0;
+}
+.relative-1 {
+	margin-left:$grid;
+}
+.relative-2 {
+	margin-left:$grid * 2;
+}
+.relative-3 {
+	margin-left:$grid * 3;
+}
+.relative-4 {
+	margin-left:$grid * 4;
+}
+.relative-5 {
+	margin-left:$grid * 5;
+}
+.relative-6 {
+	margin-left:$grid * 6;
+}
+.relative-7 {
+	margin-left:$grid * 7;
+}

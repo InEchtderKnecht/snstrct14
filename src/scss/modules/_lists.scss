@@ -1,0 +1,11 @@
+ul {
+	list-style:none;
+	.footer & {
+		li:before {
+			content:'\f0da';
+			font-family:FontAwesome;
+			margin-right:0.6em;
+			line-height:1.6em;
+		}
+	}
+}
