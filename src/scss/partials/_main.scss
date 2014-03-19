@@ -1,5 +1,5 @@
 .main {
-	background:white;
+	//background:white;
 	overflow:visible;
 	position:relative;
 	margin:0;
@@ -20,10 +20,6 @@
 		padding-top:3em;
 		padding-bottom:12em;
 	}
-	//.showMenu & {
-	//	//@include transition-duration(9s);
-	//}
-	//@include perspective(600px);
 }
 
 .section {
@@ -39,16 +35,3 @@
 		margin-top:14em;
 	}
 }
-
-//.main p {
-//	width:100%;
-//	padding-top:2em;
-//	font-size:0.9em;
-//	line-height:1.35em;
-//	@include bp(tablet) {	
-//		float:right;
-//		display:inline-block;
-//		width:50%;
-//		min-width:240px;
-//	}
-//}

@@ -24,6 +24,7 @@
     "Modernizr": true,
     "FastClick": true,
     "skrollr": true,
+    "scrollMonitor": true,
     "alert": true
   }
 }

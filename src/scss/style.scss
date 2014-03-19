@@ -10,6 +10,7 @@
 //----------------------------------*/
 
 // Config modules
+@import 'modules/_typography.scss';
 @import 'modules/_breakpoints.scss';
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
@@ -24,12 +25,16 @@
 @import 'partials/_transforms.scss';
 @import 'partials/_links.scss';
 @import 'partials/_landingImage.scss';
+@import 'partials/_mountains.scss';
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_main.scss';
 @import 'partials/_gallery.scss';
 @import 'partials/_footer.scss';
 @import 'partials/_tags.scss';
+@import 'partials/_svg.scss';
+@import 'partials/_svgSplash.scss';
+@import 'partials/_svgTrenner.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
@@ -38,7 +43,6 @@
 @import 'modules/_buttons.scss';
 @import 'modules/_inputs.scss';
 @import 'modules/_lists.scss';
-@import 'modules/_typography.scss';
 @import 'modules/_misc.scss';
 @import 'modules/_app.scss';
 

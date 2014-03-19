@@ -1,0 +1,31 @@
+.svg.trenner_1 {
+  .aquarell {
+    filter:hue-rotate(-30deg) saturate(1) brightness(100%);
+    -webkit-filter:hue-rotate(-30deg) saturate(1) brightness(100%);
+    -moz-filter:hue-rotate(-30deg) saturate(1) brightness(100%);
+    -o-filter:hue-rotate(-30deg) saturate(1) brightness(100%);
+    -ms-filter:hue-rotate(-30deg) saturate(1) brightness(100%);
+  }
+  &.state1 .aquarell {
+    filter:hue-rotate(-90deg) saturate(1) brightness(80%);
+    -webkit-filter:hue-rotate(-90deg) saturate(1) brightness(80%);
+    -moz-filter:hue-rotate(-90deg) saturate(1) brightness(80%);
+    -o-filter:hue-rotate(-90deg) saturate(1) brightness(80%);
+    -ms-filter:hue-rotate(-90deg) saturate(1) brightness(80%);
+  }
+  .illu {
+    top: 4.8%;
+    left: 7.2%;
+    width: 56.69%;
+  }
+  .addon {
+    width: 70%;
+    right: 10%;
+    top: 40%;
+    filter:hue-rotate(210deg);
+    -webkit-filter:hue-rotate(210deg);
+    -moz-filter:hue-rotate(210deg);
+    -o-filter:hue-rotate(210deg);
+    -ms-filter:hue-rotate(210deg);
+  }
+}
