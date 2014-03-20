@@ -20,21 +20,20 @@
 // PARTIALS
 //----------------------------------*/
 
-@import 'partials/_grid.scss';
 @import 'partials/_blackBackground.scss';
 @import 'partials/_transforms.scss';
 @import 'partials/_links.scss';
-@import 'partials/_landingImage.scss';
-@import 'partials/_mountains.scss';
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
-@import 'partials/_main.scss';
-@import 'partials/_gallery.scss';
-@import 'partials/_footer.scss';
 @import 'partials/_tags.scss';
+@import 'partials/_header.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';
+@import 'partials/_nav.scss';
 @import 'partials/_svg.scss';
 @import 'partials/_svgSplash.scss';
 @import 'partials/_svgTrenner.scss';
+@import 'partials/_grid.scss';
+@import 'partials/_container.scss';
+@import 'partials/_states.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES

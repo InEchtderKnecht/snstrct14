@@ -1,6 +1,12 @@
 .svgContainer {
   width:100%;
   position:relative;
+  pointer-events:none;
+  opacity:1;
+  //@include transition(opacity 0.4s linear);
+  @include transition-property(opacity);
+  @include transition-timing-function(linear);
+  @include transition-duration(0.3s);
   svg {
     width:100%;
     height:auto;
@@ -9,6 +15,9 @@
     margin:0;
     display:block;
     position:relative;
+  }
+  &.fadeOut {
+    opacity:0;
   }
 }
 
@@ -27,11 +36,15 @@
     height:auto;
   }
   .addon {
-    display:none;
+    //display:none;
+    z-index:7000;
+  }
+  .illu {
+    opacity:0.95;
   }
   .aquarell {
-    z-index:4000;
-    pointer-events:none;
+    z-index:7000;
+    //pointer-events:none;
     @include transition(all 0.3s ease);
   }
 }

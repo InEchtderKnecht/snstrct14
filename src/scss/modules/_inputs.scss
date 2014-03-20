@@ -15,10 +15,12 @@ input[type="text"] {
 	width:100%;
 	display:block;
 	padding:0.8em;
-	background:darken(white,8%);
-	//color:white;
+	background:black;
+	color:white;
 	margin-bottom:1em;
-	font-weight:400;
+	//font-weight:400;
+	font-weight:700;
+	@include transition(all 0.4s ease);
 }
 
 input[type="submit"] {
@@ -28,6 +30,10 @@ input[type="submit"] {
 	cursor:pointer;
 	color:$red;
 	@include underlined($red);
+	&:hover {
+		color:$blue;
+		border-color:$blue;
+	}
 }
 
 //input {

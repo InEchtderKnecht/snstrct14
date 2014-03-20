@@ -1,0 +1,81 @@
+.container {
+  position:relative;
+}
+
+
+.videoContainer {
+  @include bp(tablet) {
+    margin: -23% 0 -12% 0;
+  }
+}
+
+.openCallContainer {
+  @include bp(tablet) {
+    margin: -32% 0 0 0;
+  }
+}
+
+.ticketsContainer {
+  @include bp(tablet) {
+    margin: -26% 0 0 0;
+  }
+}
+
+.footerContainer {
+  @include bp(tablet) {
+    margin: 20% 0 -45% 0;
+  }
+}
+
+.imprintContainer {
+  .imprint {
+    //opacity:0.4;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width:100%;
+    padding-bottom:2em;
+    a {
+      padding:1em;
+      display:inline-block;
+      position:relative;
+      text-transform:uppercase;
+      span {
+        @include underlined(black);
+        font-size:90%;
+        font-weight:700;
+      }
+    }
+  }
+  @include bp(tablet) {
+    height:0px;
+    overflow:visible;
+    width:100%;
+  }
+}
+
+.playButton {
+  width:80px;
+  height:80px;
+  @include border-top-radius(50%);
+  @include border-bottom-radius(50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-40px 0 0 -40px;
+  border:0.23em solid black;
+  overflow:visible;
+  cursor:pointer;
+  &:after {
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-10px 0 0 -10px;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid black;
+  }
+}

@@ -15,6 +15,22 @@
 	}
 }
 
+.sinstruct_2014_tag {
+	@include bp(tablet) {
+		width:300px;
+		&:hover {
+			//z-index:8000;
+			.logo {
+				@include underlined(transparent);
+			}
+			.menuWrap {
+				display:block;
+			}
+		}
+	}
+
+}
+
 .menuWrap {
 	display:none;
 	position:relative;
@@ -32,11 +48,21 @@
 
 .menu {
 	width:100%;
-	background:white;
+	background:black;
+	color:white;
 	list-style:none;
 	padding:1em 0;
+	//border:0.2em solid rgba(0,0,0,0.1);
 	@include bp(desktop) {
 		padding:1.5em 0;
+	}
+	a {
+		border-bottom:0.2em solid transparent;
+		.no-touch & {
+			&:hover {
+				border-bottom:0.2em solid white;
+			}
+		}
 	}
 }
 

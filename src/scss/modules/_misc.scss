@@ -15,3 +15,10 @@
 	color:white;
 	text-shadow:none;
 }
+
+.only-phone {
+  display:none;
+  @include bp(phone) {
+    display:inline;
+  }
+}

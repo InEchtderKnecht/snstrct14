@@ -22,6 +22,18 @@
       //setMainMargin($('.main'));
     });
 
+    $(document).on('click', '.festival_tag', function(){
+      $('.svgContainer').addClass('fadeOut');
+      setTimeout(function(){
+        $('.svgContainer').removeClass('fadeOut');
+      }, 600);
+      setTimeout(function(){
+        $('body').toggleClass('darkSkin');
+      }, 400);
+
+      //$('body').toggleClass('darkSkin');
+    });
+
     //$('.svg').each(function(i, element) {
     //  var watcher = scrollMonitor.create( element, -150 );
     //  watcher.lock();

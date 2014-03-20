@@ -1,6 +1,9 @@
 .header {
+	position:absolute;
+	width:100%;
 	text-align:center;
 	z-index:100;
+	padding-top:1em;
 	@include bp(tablet) {
 		position:fixed;
 		top:3em;

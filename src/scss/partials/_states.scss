@@ -1,0 +1,29 @@
+.darkSkin {
+  background:black;
+  color:white;
+  .illu {
+    display:none;
+  }
+  .svgContainer {
+    //filter:saturate(0.12) contrast(4);
+    //-webkit-filter:saturate(0.12) contrast(4);
+    //-moz-filter:saturate(0.12) contrast(4);
+    //-o-filter:saturate(0.12) contrast(4);
+    //-ms-filter:saturate(0.12) contrast(4);
+  }
+  input[type="text"] {
+    background:white;
+    color:black;
+  }
+  .menu {
+    background:white;
+    color:black;
+  }
+  .sinstruct_2014_tag {
+    .logo {
+      //@include transition-duration(0.4s);
+      @include underlined(white);
+    }
+
+  }
+}

@@ -1,59 +1,23 @@
 
-
 .svg.splash_1 {
   top:0px;
-  .aquarell {
-    filter:hue-rotate(0deg) brightness(100%);
-    -webkit-filter:hue-rotate(0deg) brightness(100%);
-    -moz-filter:hue-rotate(0deg) brightness(100%);
-    -o-filter:hue-rotate(0deg) brightness(100%);
-    -ms-filter:hue-rotate(0deg) brightness(100%);
-  }
-  &.state1 .aquarell {
-    filter:hue-rotate(20deg) brightness(80%);
-    -webkit-filter:hue-rotate(20deg) brightness(80%);
-    -moz-filter:hue-rotate(20deg) brightness(80%);
-    -o-filter:hue-rotate(20deg) brightness(80%);
-    -ms-filter:hue-rotate(20deg) brightness(80%);
+  .addon {
+    top: 50%;
+    left: 0;
+    width: 87%;
+    @include transform(rotate(-60deg) translate3d(3%,-21%,0));
+    filter:hue-rotate(50deg);
+    -webkit-filter:hue-rotate(50deg);
+    -moz-filter:hue-rotate(50deg);
+    -o-filter:hue-rotate(50deg);
+    -ms-filter:hue-rotate(50deg);
   }
 }
-
-
 
 .svg.splash_2 {
   top:20%;
-  .aquarell {
-    filter:hue-rotate(75deg) brightness(100%);
-    -webkit-filter:hue-rotate(75deg) brightness(100%);
-    -moz-filter:hue-rotate(75deg) brightness(100%);
-    -o-filter:hue-rotate(75deg) brightness(100%);
-    -ms-filter:hue-rotate(75deg) brightness(100%);
-  }
-  &.state1 .aquarell {
-    filter:hue-rotate(90deg) brightness(90%);
-    -webkit-filter:hue-rotate(90deg) brightness(90%);
-    -moz-filter:hue-rotate(90deg) brightness(90%);
-    -o-filter:hue-rotate(90deg) brightness(90%);
-    -ms-filter:hue-rotate(90deg) brightness(90%);
-  }
 }
-
-
 
 .svg.splash_3 {
   top:60%;
-  .aquarell {
-    filter:hue-rotate(90deg) brightness(100%);
-    -webkit-filter:hue-rotate(90deg) brightness(100%);
-    -moz-filter:hue-rotate(90deg) brightness(100%);
-    -o-filter:hue-rotate(90deg) brightness(100%);
-    -ms-filter:hue-rotate(90deg) brightness(100%);
-  }
-  &.state1 .aquarell {
-    filter:hue-rotate(120deg) brightness(105%);
-    -webkit-filter:hue-rotate(120deg) brightness(105%);
-    -moz-filter:hue-rotate(120deg) brightness(105%);
-    -o-filter:hue-rotate(120deg) brightness(105%);
-    -ms-filter:hue-rotate(120deg) brightness(105%);
-  }
 }
