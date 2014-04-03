@@ -14,7 +14,7 @@
 	h3, h4 {
 		letter-spacing:0.04em;
 	}
-	h1, h2, a {
+	h1, h2 {
 		font-family:Asul;
 		font-weight:700;
 	}
@@ -37,11 +37,12 @@
 
 .sinstruct_2014_tag {
 	.logo {
+		cursor:pointer;
 		width:auto;
 		margin:0 auto;
 		display:inline-block;
 		@include underlined(black);
-		@include transition(border 0.4s ease);
+		//@include transition(border 0.4s ease);
 	}
 }
 
@@ -79,6 +80,11 @@
 	font-size:130%;
 	text-align:center;
 	padding-top:2.8em;
+	a {
+		color:black;
+		font-family:Asul;
+		font-weight:700;
+	}
 	@include bp(tablet) {
 		font-size:180%;
 		padding-top:0em;
@@ -102,6 +108,9 @@
 	padding-top:1.6em;
 	h1, h2, h3, h4, a, p {
 		white-space:normal;
+	}
+	h3 {
+		padding-bottom:0.6em;
 	}
 }
 
@@ -133,127 +142,3 @@
 	}
 }
 
-//.sinstruct_2014_tag, .nav_tag, .date_tag {
-//	display:inline-block;
-//	padding:0 0 0.3em 0;
-//	pointer-events:auto;
-//	h1, h3 {
-//		display:inline;
-//		padding:0;
-//	}
-//	@include bp(laptop) {
-//		font-size:110%;
-//	}
-//	@include bp(desktop) {
-//		font-size:150%;
-//	}
-//}
-//
-//.sinstruct_2014_tag {
-//	border-bottom:0.25em solid black;
-//}
-//
-//.sinstruct_block_tag {
-//	width:8em;
-//	margin-left:auto;
-//	margin-right:auto;
-//	img {
-//		width:100%;
-//		height:auto!important;
-//	}
-//	@include bp(tablet) {
-//		width:6em;
-//		float:left;
-//		display:inline-block;
-//		margin-left:0;
-//		margin-right:0;
-//	}
-//	@include bp(laptop) {
-//		width:4em;
-//	}
-//}
-
-//.date_tag {
-//	h3 {
-//		font-size:2em;
-//		line-height:1em;
-//	}
-//	//@include hover-box($blue);
-//	@include bp(tablet) {
-//		position:absolute;
-//		top:4em;
-//		left:0px;
-//		@include transform-origin(0% 0%);
-//		@include transform(rotate(-90deg) translateX(-100%));
-//		@include hover-box($blue);
-//		h3 {
-//			font-size:1.3em;
-//			line-height:inherit;
-//			display:inline;
-//			display:inline-block;
-//			padding-left:0.7em;
-//			&:first-child {
-//				padding-left:0;
-//			}
-//		}
-//	}
-//	//.showMenu & {
-//	//	@include transform(rotate(-20deg));
-//	//}
-//}
-//
-//.location_tag {
-//	//@include hover-box($blue);
-//	@include bp(tablet) {
-//		position:absolute;
-//		top:4em;
-//		right:28%;
-//		@include transform-origin(100% 0%);
-//		@include transform(rotate(-90deg) translateY(-100%));
-//		@include hover-box($green);
-//	}
-//	//.showMenu & {
-//	//	@include transform-origin(50% 50%);
-//	//	@include transform(rotateZ(-70deg) rotateX(-24deg) rotateY(15deg));
-//	//}
-//}
-//
-//.illustration_tag {
-//	img {
-//		width:80%;
-//		max-width:300px;
-//		margin:5% auto 0 auto;
-//	}
-//	@include bp(tablet) {
-//		margin-bottom:3em;
-//	}
-//	@include bp(laptop) {
-//		img {
-//			max-width:400px;
-//		}
-//	}
-//	//.showMenu & {
-//	//	@include transform(rotateZ(-20deg) rotateX(25deg) rotateY(-30deg));
-//	//}
-//}
-//
-//.festival_tag {
-//	padding-top:8%;
-//	padding-bottom:5%;
-//	h2 {
-//		padding:0 0.6em;
-//		display:inline;
-//		display:inline-block;
-//	}
-//	h3 {
-//		text-transform:uppercase;
-//		font-size:2.6em;
-//		padding:0;
-//	}
-//	@include bp(tablet) {
-//		margin-bottom:2em;
-//	}
-//	@include bp(desktop) {
-//		font-size:140%;
-//	}
-//}

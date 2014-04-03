@@ -14,33 +14,22 @@
 
 html {
 	font-size: 100%;
+	height:100%;
 }
 
 body {
 	padding:0;
 	margin:0;
 	background:white;
-	//@include bp(tablet) {
-	//	//background:black;
-	//	position: absolute;
-	//	top:0px;
-	//	left:0px;
-	//	width:100%;
-	//	height:100%;
-	//	overflow-y:scroll;
-	//	-webkit-overflow-scrolling:touch;
-	//}
-}
-
-body {
 	font: 400 1.1em/1.3em 'Montserrat', 'Helvetica Neue', Helvetica, Arial;
 	color: black;
 	line-height:1.3em;
 	font-weight:normal;
-	padding:0;
 	width:100%;
 	overflow-x:hidden;
-	@include transition(all 0.4s linear);
+	min-height:100%;
+	position:relative;
+	//@include transition(all 0.4s linear);
 }
 
 nav, header, main, footer {
@@ -54,6 +43,15 @@ a {
 	text-decoration:none;
 	color:inherit;
 	outline:0;
+	color:$blue;
+	&.blueLink {
+		font-family:Asul;
+		font-weight:700;
+		@include underlined($blue);
+	}
+	&.blackLink {
+		color:black;
+	}
 }
 
 h1, h2, h3, h4 {
@@ -72,20 +70,58 @@ h1, h2 {
 	font-weight:700;
 }
 
-p {
+p, label, table, ol {
 	font-size:0.7em;
 	line-height:1.4em;
 	text-align:left;
+}
+
+ol {
+	list-style-type:lower-latin;
+	li {
+		padding-left:0.8em;
+		padding-bottom:1.1em;
+	}
+}
+
+label {
+	display:block;
+	margin-bottom:0.7em;
+}
+
+p, ol {
+	margin-bottom:1.35em;
 	a {
 		font-family:'Montserrat';
 	}
 }
 
-//.transform {
-//	@include transform(translateX(0));
-//	@include transition(all 0.8s ease-in);
-//	.showMenu & {
-//		@include transform(translateX(6em));
-//		background:red;
-//	}
-//}
+.error {
+	color:$red;
+	display: inline-block;
+	width: auto;
+	padding: 0.5em 0.9em;
+	border: 0.4em solid $red;
+	margin-bottom: 2.5em;
+	@include transform(rotate(-4deg));
+}
+
+.inputDetails {
+	text-align: right;
+	opacity: 0.4;
+}
+
+.hvhb {
+	color:$green;
+}
+
+.anker1, .anker2 {
+	display:block;
+	padding:0;
+	margin:0;
+	width:0px;
+	height:0px;
+	opacity:0;
+	visibility:hidden;
+}
+

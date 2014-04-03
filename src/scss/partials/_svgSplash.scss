@@ -1,23 +1,12 @@
 
-.svg.splash_1 {
+.svgWrap.splash_1 {
   top:0px;
-  .addon {
-    top: 50%;
-    left: 0;
-    width: 87%;
-    @include transform(rotate(-60deg) translate3d(3%,-21%,0));
-    filter:hue-rotate(50deg);
-    -webkit-filter:hue-rotate(50deg);
-    -moz-filter:hue-rotate(50deg);
-    -o-filter:hue-rotate(50deg);
-    -ms-filter:hue-rotate(50deg);
-  }
 }
 
-.svg.splash_2 {
+.svgWrap.splash_2 {
   top:20%;
 }
 
-.svg.splash_3 {
-  top:60%;
+.svgWrap.splash_3 {
+  top:55%;
 }

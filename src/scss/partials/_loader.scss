@@ -1,0 +1,25 @@
+#loader {
+  position:fixed;
+  display:block;
+  background:white;
+  opacity:0;
+  pointer-events:none;
+  top:-50%;
+  left:-50%;
+  z-index:100000;
+  height:1px;
+  width:200%;
+  @include transition-property(opacity, height);
+  @include transition-duration(0.45s, 0s);
+  @include transition-delay(0s, 0.45s);
+  @include transition-timing-function(ease, linear);
+  .loading & {
+    opacity:1;
+    pointer-events:auto;
+    height:200%;
+    @include transition-delay(0s, 0s);
+  }
+  .no-js & {
+    display:none !important;
+  }
+}

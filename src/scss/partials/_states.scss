@@ -18,12 +18,33 @@
   .menu {
     background:white;
     color:black;
+    a {
+      color:black;
+      .no-touch & {
+        &:hover {
+          border-color:black;
+        }
+      }
+    }
   }
   .sinstruct_2014_tag {
     .logo {
       //@include transition-duration(0.4s);
       @include underlined(white);
     }
-
+  }
+  table td {
+    border-color:rgb(60,60,60);
+  }
+  input[type="checkbox"], input[type="radio"] {
+    &+label {
+      &:before {
+        border-color:white;
+      }
+    }
+    &:checked+label {
+      &:before {
+      }
+    }
   }
 }

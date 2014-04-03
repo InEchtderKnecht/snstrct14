@@ -57,6 +57,9 @@
 		padding:1.5em 0;
 	}
 	a {
+		color:white;
+		font-family:'Asul';
+		font-weight:700;
 		border-bottom:0.2em solid transparent;
 		.no-touch & {
 			&:hover {
@@ -81,57 +84,3 @@
 	height:0px;
 	font-size:0.01em
 }
-
-
-//.nav {
-//	position:fixed;
-//	top:0px;
-//	right:100%;
-//	bottom:0px;
-//	width:$navWidth / 1.5;
-//	height:100%;
-//	z-index:50;
-//	overflow:visible;
-//	.wrap {
-//		position:relative;
-//		background:$blue;
-//		//background-image:url('../content/See.jpg');
-//		top:0px;
-//		right:0px;
-//		width:100%;
-//		height:100%;
-//		display:block;
-//		@include perspective(900);
-//	}
-//	@include bp(tablet) {
-//		width:$navWidth;
-//	}
-//}
-//
-//.nav .colorWrap {
-//	//background:$blue;
-//	background:white;
-//	//box-shadow:inset 0px 0px 0px 14px $blue, 0px 0px 0px 1px $blue;
-//	border:15px solid $blue;
-//	width:100%;
-//	height:100%;
-//	position:absolute;
-//	top:0px;
-//	left:0px;
-//	@include transition(all 0.4s ease);
-//	@include transform(rotateZ(0deg));
-//	text-align:right;
-//	padding:3em;
-//	.showMenu & {
-//		@include transform(rotateZ(0deg));
-//		@include transition-duration(0.3s);
-//	}
-//	@include bp(tablet) {
-//		.showMenu & {
-//			@include transform(rotateZ(20deg));
-//			@include transition-duration(0.3s);
-//		}
-//	}
-//}
-//
-//

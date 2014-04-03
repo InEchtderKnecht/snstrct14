@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom:3em;
+  width:100% !important;
+  td {
+    white-space:pre-wrap;
+    border-bottom:0.1rem dotted rgba(0,0,0,0.1);
+    padding:0.4em 1em 0.6em 0;
+    vertical-align:middle;
+    &:last-child {
+      text-align:right;
+      padding-right:0.1em;
+    }
+  }
+
+  tr {
+    &:last-child {
+      td {
+        border:none;
+      }
+    }
+  }
+  .hvhb {
+    font-size:1.2em;
+  }
+}
