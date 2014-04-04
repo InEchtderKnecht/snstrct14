@@ -39,10 +39,16 @@
 	.logo {
 		cursor:pointer;
 		width:auto;
-		margin:0 auto;
+		margin:2em auto;
 		display:inline-block;
 		@include underlined(black);
 		//@include transition(border 0.4s ease);
+		h1, h3 {
+			white-space:pre;
+		}
+		@include bp(tablet) {
+			margin:0 auto;
+		}
 	}
 }
 
@@ -51,7 +57,7 @@
 	cursor:pointer;
 	h2 {
 		display:block;
-		font-size:4em;
+		font-size:3.8em;
 		line-height:1em;
 		padding-bottom:0.05em;
 	}
@@ -60,8 +66,11 @@
 		white-space:pre;
 	}
 	font-size:85%;
-	padding:0 0 4em 0;
+	padding:0 0 1em 0;
 	@include bp(tablet) {
+		h2 {
+			font-size:4.2em;
+		}
 		font-size:100%;
 		padding:0em;
 		@include transform-origin(0% 0%);
@@ -94,44 +103,28 @@
 	@include bp(desktop) {
 		font-size:270%;
 	}
-	//display:none;
-}
-
-.gallery_tag {
-	font-size:200%;
-	@include bp(desktop) {
-		font-size:300%;
-	}
 }
 
 .pretext_tag {
-	padding-top:1.6em;
+	//padding-top:1.6em;
+	text-align:center;
 	h1, h2, h3, h4, a, p {
 		white-space:normal;
 	}
 	h3 {
-		padding-bottom:0.6em;
+		padding-bottom:1.2em;
+	}
+	@include bp(tablet) {
+		text-align:left;
+		h3 {
+			padding-bottom:0.6em;
+		}
 	}
 }
 
-.contribute_tag {
-	text-align:center;
-	padding-top:3em;
-}
-
 .video_tag {
+	padding:0;
 	//z-index:5000;
-}
-
-.info_tag {
-	top:40%;
-}
-
-.newsletter_tag {
-	//padding-top:12em;
-}
-
-.imprint_tag {
 }
 
 .portfolio_tag {

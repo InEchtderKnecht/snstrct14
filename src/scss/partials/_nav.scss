@@ -16,6 +16,8 @@
 }
 
 .sinstruct_2014_tag {
+	width:100%;
+	padding:0;
 	@include bp(tablet) {
 		width:300px;
 		&:hover {
@@ -28,19 +30,22 @@
 			}
 		}
 	}
-
 }
 
 .menuWrap {
-	display:none;
+	display:block;
 	position:relative;
 	width:100%;
 	height:auto;
 	overflow:hidden;
-	padding:1em;
-	width:60%;
-	min-width:11em;
+	padding:0;
 	margin:0 auto 0 auto;
+	@include bp(tablet) {
+		min-width:11em;
+		width:60%;
+		display:none;
+		padding:1em;
+	}
 	@include bp(desktop) {
 		padding:1.2em;
 	}

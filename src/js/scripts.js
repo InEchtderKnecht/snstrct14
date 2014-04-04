@@ -1,3 +1,39 @@
+(function($) {
+
+  'use strict';
+
+  $.fn.bindWithDelay = function( type, data, fn, timeout, throttle ) {
+    if ( $.isFunction( data ) ) {
+      throttle = timeout;
+      timeout = fn;
+      fn = data;
+      data = undefined;
+    }
+    // Allow delayed function to be removed with fn in unbind function
+    fn.guid = fn.guid || ($.guid && $.guid++);
+    // Bind each separately so that each element has its own delay
+    return this.each(function() {
+        
+      var wait = null;
+    
+      function cb() {
+          var e = $.extend(true, { }, arguments[0]);
+          var ctx = this;
+          var throttler = function() {
+              wait = null;
+              fn.apply(ctx, [e]);
+            };
+          
+          if (!throttle) { clearTimeout(wait); wait = null; }
+          if (!wait) { wait = setTimeout(throttler, timeout); }
+        }
+      
+      cb.guid = fn.guid;
+      $(this).bind(type, data, cb);
+    });
+  };
+})(jQuery);
+
 (function ($, window, document, undefined) {
 
   'use strict';
@@ -44,6 +80,55 @@
       //s.refresh();
       //alert('jo');
     });
+
+    $(document).bindWithDelay('mousemove', function( event ) {
+      var percentX = -((0.5 - (event.clientX / $(window).width())) * -2),
+        percentY = -((0.5 - (event.clientY / $(window).height())) * -2),
+        offset1 = 'translate(' +
+          Math.floor(($(window).width() / 110) * percentX) + 'px,' +
+          Math.floor(($(window).height() / 110) * percentY) + 'px) scale(1.075)',
+        offset2 = 'translate(' + 
+          Math.floor(($(window).width() / 110) * -percentX) + 'px,' + 
+          Math.floor(($(window).height() / 130) * percentY) + 'px) scale(1.075)',
+        rotate1 = 'rotate(' + 
+          Math.floor(($(window).width() / 170) * percentX * -percentY) + 'deg)';
+      //  offsetTwo = 'translate(' + Math.floor(($(window).width() / 40) * percentX) + 'px,' + Math.floor(($(window).height() / 40) * percentY) + 'px) scale(1.06)',
+      //  offsetThree = 'translate(' + Math.floor(($(window).width() / 200) * percentX) + 'px,' + Math.floor(($(window).height() / 100) * percentY) + 'px) scale(1.02)'
+//
+
+      $('.offset1').css({
+        '-webkit-transform': offset1,
+        '-moz-transform': offset1,
+        '-o-transform': offset1,
+        'transform': offset1
+      });
+      $('.offset2').css({
+        '-webkit-transform': offset2,
+        '-moz-transform': offset2,
+        '-o-transform': offset2,
+        'transform': offset2
+      });
+      //$illu.find('.layerOne > img').css({
+      //  '-webkit-transform': offsetOne,
+      //  '-moz-transform': offsetOne,
+      //  '-o-transform': offsetOne,
+      //  'transform': offsetOne
+      //});
+      //$illu.find('.layerTwo > img').css({
+      //  '-webkit-transform': offsetTwo,
+      //  '-moz-transform': offsetTwo,
+      //  '-o-transform': offsetTwo,
+      //  'transform': offsetTwo
+      //});
+      //$illu.find('.layerThree > img').css({
+      //  '-webkit-transform': offsetThree,
+      //  '-moz-transform': offsetThree,
+      //  '-o-transform': offsetThree,
+      //  'transform': offsetThree
+      //});
+      console.log(percentX);
+      console.log(percentY);
+    }, 10, true);
 
     //$('form').submit( function(event) {
     //  var form = this;
