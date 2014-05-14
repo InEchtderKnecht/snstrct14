@@ -40,7 +40,7 @@
 
   function setHeights() { 
     var h = $(window).height();
-    var w = $(window).width();
+    //var w = $(window).width();
     $('.staticContainer').css('min-height', h);
     //if (w >= 600) {
     //  $('.staticContainer').css('min-height', h);
