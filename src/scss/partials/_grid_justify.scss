@@ -1,0 +1,58 @@
+.justify {
+  display:justify;
+  font-size:0.1px;
+  padding:0 5%;
+  .element {
+    font-size:1.1rem;
+    display:inline-block;
+    width:100%;
+    vertical-align:top;
+    padding:0 2.5%;
+    margin-bottom:4%;
+    //overflow:hidden;
+    h1,  h3 {
+      line-height:1em;
+      margin:0;
+      padding:0;
+    }
+    p {
+      margin-bottom:8px;
+      max-width:none;
+    }
+    .title {
+      margin-bottom:5px;
+    }
+    .label {
+      text-transform:uppercase;
+      font-size:16px;
+      margin-bottom:8px;
+      color:$red;
+    }
+    .blue-link {
+      display:inline-block;
+      font-family:Asul;
+      font-weight:600;
+      margin-right:100%;
+      border-bottom:0.2em solid $blue;
+      margin-bottom:4px;
+
+    }
+    @include bp(tablet) {
+      width:50%;
+      p {
+        font-size:0.8em;
+      }
+    }
+    @include bp(laptop) {
+      width:33.33%;
+    }
+    &.large {
+      @include bp(tablet) {
+        width:100%;
+      }
+      @include bp(laptop) {
+        width:66.66%;
+      }
+    }
+  }
+}
