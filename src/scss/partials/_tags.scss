@@ -35,29 +35,6 @@
 	}
 }
 
-.sinstruct_2014_tag {
-	.logo {
-		cursor:pointer;
-		width:auto;
-		margin:2em auto;
-		display:inline-block;
-		@include underlined(black);
-		//@include transition(border 0.4s ease);
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		margin-left: -3.9em;
-		h1, h3 {
-			white-space:pre;
-		}
-		@include bp(tablet) {
-			position:relative;
-			top:auto;
-			left:auto;
-			margin:0 auto;
-		}
-	}
-}
 
 .festival_tag {
 	margin-top:20%;

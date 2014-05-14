@@ -1,38 +1,83 @@
-.navigation {
-	@include bp(tablet) {
-		width:$grid * 2;
-		float:left;
-		//.no-touch &, .no-js & {
-			&:hover {
-				.menuWrap {
-					display:block;
-				}
-				h1 {
-					display:none;
-				}
-			}
-		//}
-	}
-}
+//.navigation {
+//	@include bp(tablet) {
+//		width:$grid * 2;
+//		float:left;
+//		//.no-touch &, .no-js & {
+//			&:hover {
+//				.menu_wrap {
+//					display:block;
+//				}
+//				h1 {
+//					display:none;
+//				}
+//			}
+//		//}
+//	}
+//}
 
-.sinstruct_2014_tag {
+
+.menu_tag {
 	width:100%;
 	padding:0;
 	@include bp(tablet) {
-		width:300px;
+		width:33%;
 		&:hover {
+			//color:$blue;
+			//@include underlined($blue);
 			//z-index:8000;
 			.logo {
+				//@include underlined(transparent);
+			}
+			.menu_wrap {
+				display:block;
+				padding:1em;
+				height:280px;
+				@include transform(translateY(0%));
+				@include transition-delay(0s, 0.01s);
+			}
+		}
+	}
+	.wrap {
+		@include underlined(black);
+		cursor:pointer;
+		width:auto;
+		margin:2em auto;
+		display:inline-block;
+		//@include transition(border 0.4s ease);
+		//position: absolute;
+		top: 100%;
+		left: 50%;
+		h1, h3 {
+			white-space:pre;
+		}
+		&.language {
+			@include underlined(transparent);
+		}
+		a {
+			color:black;
+			font-size:1em;
+			white-space:normal;
+			@include underlined(black);
+			&.active {
 				@include underlined(transparent);
 			}
-			.menuWrap {
-				display:block;
-			}
+		}
+		@include bp(tablet) {
+			position:relative;
+			top:auto;
+			left:auto;
+			margin:0 auto;
+		}
+	}
+	.logo {
+		font-size:150%;
+		@include bp(tablet) {
+			font-size:100%;
 		}
 	}
 }
 
-.menuWrap {
+.menu_wrap {
 	display:block;
 	position:relative;
 	width:100%;
@@ -43,8 +88,15 @@
 	@include bp(tablet) {
 		min-width:11em;
 		width:60%;
-		display:none;
+		//display:none;
+		height:0px;
+		//padding:1em;
 		padding:1em;
+		@include transform(translateY(-600px));
+		@include transition-property(height, transform);
+		@include transition-timing-function(linear, ease);
+		@include transition-duration(0s, 0.5s);
+		@include transition-delay(0.5s, 0.01s);
 	}
 	@include bp(desktop) {
 		padding:1.2em;
@@ -53,6 +105,7 @@
 
 .menu {
 	width:100%;
+	height:100%;
 	background:black;
 	color:white;
 	list-style:none;

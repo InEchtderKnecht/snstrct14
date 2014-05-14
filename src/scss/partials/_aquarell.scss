@@ -6,6 +6,45 @@
 }
 
 
+//@keyframes rot {
+//  from {
+//    transform: rotate(0deg)
+//               translate(-3px)
+//               rotate(0deg);
+//  }
+//  to {
+//    transform: rotate(360deg)
+//               translate(-3px) 
+//               rotate(-360deg);
+//  }
+//}
+//
+//@keyframes rot_two {
+//  from {
+//    transform: rotate(0deg)
+//               translate(4px)
+//               rotate(0deg);
+//  }
+//  to {
+//    transform: rotate(360deg)
+//               translate(4px) 
+//               rotate(-360deg);
+//  }
+//}
+//
+//@keyframes rot_three {
+//  from {
+//    transform: rotate(0deg)
+//               translate(-8px)
+//               rotate(0deg);
+//  }
+//  to {
+//    transform: rotate(360deg)
+//               translate(-8px) 
+//               rotate(-360deg);
+//  }
+//}
+
 
 .aquarell {
   width:100%;
@@ -13,10 +52,11 @@
   position:relative;
   z-index:10000;
   pointer-events:none;
-  //@include transform(translateZ(0px) scale(1.1));
+  animation: rot 4s infinite linear;
   &.splash_2 {
     @extend .absolute;
     top:21.8%;
+    animation: rot_two 5s infinite ease-in-out;
     @include bp(phone) {
       top:36.8%;
     } 
@@ -24,9 +64,19 @@
   &.splash_3 {
     @extend .absolute;
     top:60%;
+    animation: rot_three 3.4s infinite linear;
     @include bp(phone) {
       top:75%;
     } 
+  }
+  .trenner_1 & {
+    animation: rot 3.7s infinite linear;
+  }
+  .trenner_2 & {
+    animation: rot_two 2.9s infinite ease;
+  }
+  .trenner_3 & {
+    animation: rot_three 4.3s infinite ease;
   }
   -webkit-filter: contrast(1.1) saturate(1);
   filter: contrast(1.1) saturate(1);
@@ -51,6 +101,7 @@
     top: 4.8%;
     left: 7.2%;
     width: 56.69%;
+    animation: rot_three 7s infinite linear;
   }
   .trenner_2 & {
     top: 25.5%;

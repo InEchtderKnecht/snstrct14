@@ -3,14 +3,10 @@
 }
 
 .imageContainer {
-  width:100%;
+  width:110%;
+  margin-left:-5%;
   pointer-events:none;
-  //&.splash {
-  //  margin-bottom:-38%;
-  //  @include bp(tablet) {
-  //    margin-bottom:-42%;
-  //  }
-  //}
+  //@include transform(scale(1.1));
   &.fixed {
     position:fixed;
     bottom:0px;

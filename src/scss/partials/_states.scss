@@ -6,13 +6,6 @@
     visibility:hidden;
     @include transition-delay(0s);
   }
-  .svgContainer {
-    //filter:saturate(0.12) contrast(4);
-    //-webkit-filter:saturate(0.12) contrast(4);
-    //-moz-filter:saturate(0.12) contrast(4);
-    //-o-filter:saturate(0.12) contrast(4);
-    //-ms-filter:saturate(0.12) contrast(4);
-  }
   input[type="text"], select {
     background:white;
     color:black;
@@ -29,9 +22,8 @@
       }
     }
   }
-  .sinstruct_2014_tag {
-    .logo {
-      //@include transition-duration(0.4s);
+  .menu_tag {
+    .wrap {
       @include underlined(white);
     }
   }
