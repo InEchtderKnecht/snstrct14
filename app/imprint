@@ -1,28 +1,30 @@
-<div class="imprintPageContainer container">
+<div class="staticContainer container imprint">
   <span id="imprint" class="anchor"></span>
   <div class="section">
     
     <div class="pretext_tag tag width-2 relative-3">
-      <h3>Sinstruct</h3>
-
-      <p>Elisa Bergmann<br/>Pater-Romedius-Weg 16<br/>39018 Terlan<br/><br/><a href="mailto:info@sinstruct.com">info(at)sinstruct.com</a></p>
-      <p><br/>Gestaltung & Umsetzung:</p>
+    <br/><br/><br/><br/>
+      <p>Sinstruct<br/>Pater-Romedius-Weg 16<br/>39018 Terlan<br/><br/><a href="mailto:info@sinstruct.com">info(at)sinstruct.com</a></p>
+      <p><br/>Gestaltung:</p>
       <a href="http://www.hirnfaustauge.de" class="blueLink" target="_blank">Hirn Faust Auge</a>
+      <p><br/>Illustrationen:</p>
+      <a href="http://www.dunstmachen.net" class="blueLink" target="_blank">Liszy Lopez</a>
+      <!-- <p><br/>Video:</p>
+      <a href="http://www.max-firchau.de" class="blueLink" target="_blank">Max Firchau</a> -->
     </div>
 
   </div>
 
-
 <!-- SATZUNG -->
-
 
   <div class="section">
 
     <div class="festival_tag tag absolute-1">
-      <h2>Satzung</h2><h3>(constitution</h3>
+      <h2>Satzung</h2><h3>(constitution)</h3>
     </div>
-    
+
     <div class="pretext_tag tag width-2 relative-3">
+    <br/><br/>
       <h3>Artikel 1</h3>
       <p>Laut Art.36 u.f. Des Zivilgesetzbuches, ist der Kulturverein Namens "Sinstruct" gegründet.</p>
       <h3>Artikel 2</h3>

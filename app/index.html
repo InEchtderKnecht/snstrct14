@@ -9,19 +9,18 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Asul:400,700' rel='stylesheet' type='text/css'>
 	<link href="assets/css/style.min.css" rel="stylesheet">
-	<style>
-		.svgContainer {
-			display: none !important;
-		}
-	</style>
 
-	<script src="assets/components/modernizr.js"></script>
-	<script src="assets/components/video.js.js"></script>
+	<meta property="og:site_name" content="Sinstruct 2014"/>
+	<meta property="og:title" content="Sinstruct 2014"/>
+	<meta property="og:url" content="http://www.sinstruct.com"/>
+	<meta property="og:image" content="http://www.sinstruct.com/assets/img/sinstruct_fb_og.jpg"/>
+
+	<!-- <script src="assets/components/modernizr.js"></script>
+	<script src="assets/components/video.js.js"></script> -->
 
 </head>
 
 <body class="loading">
-	<div class="body">
 
 <div id="loader"></div>
 
@@ -41,11 +40,15 @@
 	</div>
 </div>
 
+<div class="body">
+
 <div class="imageContainer container splash">
-	<img src="assets/img/landing.png" class="aquarell offset1">
+	<img src="assets/img/splash_01.png" class="aquarell offset1 splash_1">
+	<img src="assets/img/splash_02.png" class="aquarell offset2 splash_2">
+	<img src="assets/img/splash_03.png" class="aquarell offset3 splash_3">
 </div>
 
-<div class="main">
+<div class="festivalcontainer container">
 	<span id="festival" class="anchor"></span>
 	<div class="section">
 		<div class="festival_tag tag absolute-1">
@@ -68,9 +71,10 @@
 </div>
 
 <div class="imageContainer container trenner_1">
-	<img src="assets/img/illus/illu_01.jpg" class="illu offset2">
+	<img src="assets/img/illus/illu_01.jpg" class="illu">
 	<img src="assets/img/trenner_01.png" class="aquarell offset2">
 </div>
+<!-- 
 
 <div class="videoContainer container">
 	<div class="section">
@@ -79,8 +83,8 @@
 				<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
 				<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
 				<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-				<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
-				<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+				<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+				<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
 			</video>
 			<div class="playButton"></div>
 		</div>
@@ -88,9 +92,59 @@
 </div>
 
 <div class="imageContainer container trenner_2">
-	<img src="assets/img/illus/illu_02_i.jpg" class="illu offset1">
+	<img src="assets/img/illus/illu_02_i.jpg" class="illu">
 	<img src="assets/img/trenner_02.png" class="aquarell offset1">
 </div>
+
+-->
+
+<div class="videoContainer container">
+	<div class="section">
+		<div class="tag video_tag width-5 relative-1">
+			<div class="videoWrapper">
+				<iframe src="//player.vimeo.com/video/93084489?title=0&amp;byline=0&amp;portrait=0&amp;color=4C78EB" width="1100" height="619" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="imageContainer container trenner_2">
+	<img src="assets/img/illus/illu_02_i.jpg" class="illu">
+	<img src="assets/img/trenner_02.png" class="aquarell offset1">
+</div>
+
+
+<div class="ticketsContainer container">
+	<span id="tickets" class="anchor"></span>
+	<div class="section">
+
+		<div class="festival_tag tag absolute-5">
+			<h3>Early Bird</h3>
+			<h2>Tickets</h2>
+		</div>
+
+		<div class="pretext_tag tag width-3 relative-1">
+			<h3>Intrested?<br/>buy your tickets now!</h3>
+			<p>To be guest at our lovely festival you can purchase ticket(s) here. Early bird tickets will be valid for the whole festival and are available from the 5th of April until the 25th of April. The price is 40€, so hurry up and get yours soon.</p>
+			<!-- <p>Normal pre-sale starts on the 25th, costs ?€ and are valid the whole festival time. Day tickets will cost ? € and allow the entrance for one day until the following day 6 am.</p> -->
+		</div>
+
+		<!-- <div class="pretext_tag tag width-2 relative-3">
+			<p>The shuttle bus from Munich will give you a ride directly to Sinstruct on Thursday, 1st of August 10 am at ZOB and back to Munich on Sunday the 4th of August 5pm for ?€.</p>
+		</div> -->
+
+		<div class="portfolio_tag tag width-2 relative-4">
+			<a class="changePage blueLink" href="/vvk/index.php?seite=vvk__we__en">get your ticket</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="imageContainer container trenner_3">
+	<img src="assets/img/illus/illu_03.jpg" class="illu">
+	<img src="assets/img/trenner_03.png" class="aquarell offset2">
+</div>
+
 
 <div class="openCallContainer container">
 	<span id="opencall" class="anchor"></span>
@@ -109,8 +163,8 @@
 			<p>Sinstruct Festival, in its 3rd year now, will be taking place in the Southern Tyrolean alps on 1500m above sea level near to the village Unsere Liebe Frau im Walde and will be held from Aug 7th till Aug 10th 2014.<br/><br/>Apart from the deep forest and the bloomy meadows, small caves, glades and a bunker are located on the area. We want to encourage you to start there and explore new ways of perception for the unheard and the unseen and push the diversification of art.<br/>It's up to you to give a performance or a workshop, to build sound and video installations or sculptures.</p>
 		</div>
 		
-		<div class="pretext_tag tag width-3 relative-2">
-			<p>You are cordially invited to follow and spread this call.<br/><br/>Please send a portfolio along with your visions, concepts, hyperlinks or references to <a href="mailto:opencall@sinstruct.com">opencall(at)sinstruct.com</a>.<br/><br/>Deadline: May 16, 2014.</p>
+		<div class="pretext_tag tag width-2 relative-2">
+			<p>You are cordially invited to follow and spread this call.<br/>Please send a portfolio along with your visions, concepts, hyperlinks or references to <a href="mailto:opencall@sinstruct.com">opencall(at)sinstruct.com</a>. Deadline: May 16, 2014.</p>
 		</div>
 		
 		<div class="portfolio_tag tag width-2 absolute-1">
@@ -119,37 +173,6 @@
 	</div>
 </div>
 
-
-<div class="imageContainer container trenner_3">
-	<img src="assets/img/illus/illu_03.jpg" class="illu offset2">
-	<img src="assets/img/trenner_03.png" class="aquarell offset2">
-</div>
-
-
-<div class="ticketsContainer container">
-	<span id="tickets" class="anchor"></span>
-	<div class="section">
-
-		<div class="festival_tag tag absolute-5">
-			<h3>Early Bird</h3>
-			<h2>Tickets</h2>
-		</div>
-
-		<div class="pretext_tag tag width-3 relative-1">
-			<h3>Intrested?<br/>buy your tickets now!</h3>
-			<p>SINSTRUCT understands itself as an interregional, interdisciplinary, platform for cross-cultural interaction between various fields of artistic expression.</p><p>We have a strong focus on supporting the creation of new networks and audiences for subcultural artforms and artists producing art off the beaten path of institutionalized and exclusive high-cultural or mainstream channels.</p>
-		</div>
-
-		<div class="pretext_tag tag width-2 relative-3">
-			<p>Sinstruct Festival, in its 3rd year now, will be taking place in the Southern Tyrolean alps near to Unsere Liebe Frau im Walde and will be held from Aug 7th till Aug 10th 2014.</p>
-		</div>
-
-		<div class="portfolio_tag tag width-2 absolute-4">
-			<a class="changePage blueLink" href="/vvk/index.php?seite=vvk__we__en">get your ticket</a>
-		</div>
-
-	</div>
-</div>
 
 
 <div class="footerContainer container">
@@ -171,8 +194,7 @@
 </div>
 
 <div class="imageContainer">
-	<img src="assets/img/footer_01.png" class="aquarell">
-	<img src="assets/img/footer_02.png" class="aquarell">
+	<img src="assets/img/footer_01.png" class="aquarell offset1">
 </div>
 
 <div class="footer">
@@ -182,10 +204,10 @@
 </div>
 </div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
-	<script src="assets/components/fastclick.js"></script>
-	<script src="assets/js/scripts.min.js"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script> -->
+	<!-- <script src="assets/components/fastclick.js"></script> -->
+	<!-- <script src="assets/js/scripts.min.js"></script> -->
 
 </body>
 </html>

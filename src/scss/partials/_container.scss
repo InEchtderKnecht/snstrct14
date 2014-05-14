@@ -5,17 +5,21 @@
 .imageContainer {
   width:100%;
   pointer-events:none;
-  &.splash {
-    margin-bottom:-28%;
-    @include bp(tablet) {
-      margin-bottom:-42%;
-    }
-  }
+  //&.splash {
+  //  margin-bottom:-38%;
+  //  @include bp(tablet) {
+  //    margin-bottom:-42%;
+  //  }
+  //}
   &.fixed {
     position:fixed;
     bottom:0px;
     left:0px;
   }
+}
+
+.festivalContainer {
+  margin: -12% 0 0 0;
 }
 
 .videoContainer {
@@ -25,30 +29,36 @@
 }
 
 .openCallContainer {
+  margin: -32% 0 0 0;
   @include bp(tablet) {
     margin: -32% 0 0 0;
   }
 }
 
 .ticketsContainer {
+  //margin: -26% 0 0 0;
+  margin: -12% 0 0 0;
+}
+
+.footerContainer {
+  margin: 10% 0 -35% 0;
   @include bp(tablet) {
-    margin: -26% 0 0 0;
+    margin: 8% 0 -45% 0;
   }
 }
-//
-//.footerContainer {
-//  @include bp(tablet) {
-//    margin: 8% 0 -45% 0;
-//  }
-//}
-//
-//.vvkContainer {
-//  @include bp(tablet) {
-//    padding: 4% 0 15% 0;
-//  }
-//}
+
+.staticContainer {
+  padding: 10% 0 30% 0;
+  @include bp(tablet) {
+    padding: 10% 0 20% 0;
+    &.imprint {
+      padding-top:0;
+    }
+  }
+}
 
 .footer {
+  pointer-events:none;
   .imprint {
     //opacity:0.4;
     position: absolute;
@@ -61,10 +71,14 @@
       display:inline-block;
       position:relative;
       text-transform:uppercase;
+      pointer-events:auto;
       span {
         @include underlined(black);
         font-size:90%;
         font-weight:700;
+        .darkSkin & {
+          @include underlined(white);  
+        }
       }
     }
   }
@@ -72,6 +86,24 @@
     height:0px;
     overflow:visible;
     width:100%;
+  }
+}
+
+.section {
+  width:100%;
+  display:block;
+  margin:0;
+  padding:0;
+  @include bp(tablet) {
+    padding-top:6em;
+  }
+  @include bp(laptop) {
+    padding-top:10em;
+  }
+  @include bp(desktop) {
+    padding-top:13em;
+    padding-left:6em;
+    padding-right:6em;
   }
 }
 

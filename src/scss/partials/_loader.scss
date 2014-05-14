@@ -13,6 +13,9 @@
   @include transition-duration(0.45s, 0s);
   @include transition-delay(0s, 0.45s);
   @include transition-timing-function(ease, linear);
+  .darkSkin & {
+    background:black;
+  }
   .loading & {
     opacity:1;
     pointer-events:auto;
@@ -22,4 +25,6 @@
   .no-js & {
     display:none !important;
   }
+  // Fix while debugging
+  display:none !important;
 }

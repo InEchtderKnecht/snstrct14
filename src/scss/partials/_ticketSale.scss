@@ -3,16 +3,33 @@
   color:rgb(100,100,100);
   padding:2em 0 1.5em 0;
   clear:both;
+  display:none;
   h4 {
     white-space:normal;
     color:black;
     padding-bottom:2em;
+    .darkSkin & {
+      color:white;
+    }
   }
-  p{
-
-  } 
+  .no-js & {
+    display:block !important;
+  }
+  //&.showAgb {
+  //  display:block;
+  //}
 }
 
-#showAgb {
-  font-size:0.8em;
+.showAgb {
+  .no-js & {
+    display:none;
+  }
+}
+
+
+.agb {
+  display:block;
+}
+.showAgb {
+  display:none;
 }

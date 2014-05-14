@@ -43,3 +43,8 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+## Sinstruct ##
+app/orig_svg
+app/orig_png
+app/*.zip

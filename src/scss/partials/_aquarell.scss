@@ -1,3 +1,11 @@
+.absolute {
+  position:absolute;
+  left:0px;
+  width:100%;
+  height:auto;
+}
+
+
 
 .aquarell {
   width:100%;
@@ -5,7 +13,30 @@
   position:relative;
   z-index:10000;
   pointer-events:none;
-  @include transform(translateZ(0px) scale(1.1));
+  //@include transform(translateZ(0px) scale(1.1));
+  &.splash_2 {
+    @extend .absolute;
+    top:21.8%;
+    @include bp(phone) {
+      top:36.8%;
+    } 
+  }
+  &.splash_3 {
+    @extend .absolute;
+    top:60%;
+    @include bp(phone) {
+      top:75%;
+    } 
+  }
+  -webkit-filter: contrast(1.1) saturate(1);
+  filter: contrast(1.1) saturate(1);
+  .darkSkin & {
+    -webkit-filter: contrast(1) saturate(1);
+    filter: contrast(1) saturate(1);
+  }
+  @include bp(phone) {
+    @include transform(translateZ(0px) scale(1.45));
+  }
 }
 
 
@@ -14,6 +45,8 @@
   z-index:-10;
   pointer-events:none;
   opacity:0.95;
+  @include transition-duration(0);
+  @include transition-delay(0.45s);
   .trenner_1 & {
     top: 4.8%;
     left: 7.2%;

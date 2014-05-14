@@ -2,7 +2,9 @@
   background:black;
   color:white;
   .illu {
-    display:none;
+    //display:none;
+    visibility:hidden;
+    @include transition-delay(0s);
   }
   .svgContainer {
     //filter:saturate(0.12) contrast(4);
@@ -11,7 +13,7 @@
     //-o-filter:saturate(0.12) contrast(4);
     //-ms-filter:saturate(0.12) contrast(4);
   }
-  input[type="text"] {
+  input[type="text"], select {
     background:white;
     color:black;
   }

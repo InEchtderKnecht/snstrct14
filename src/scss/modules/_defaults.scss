@@ -54,10 +54,44 @@ a {
 	&.blueLink {
 		font-family:Asul;
 		font-weight:700;
-		@include underlined($blue);
+		display:block;
+		width:100%;
+		//background:$blue;
+		//color:white;
+		border:.2em solid $blue;
+		margin-top:0.3em;
+		padding:0.4em 0.2em;
+		.imprint & {
+			margin-top:-0.6em;
+		}
+		@include bp(tablet) {
+			//color:$blue;
+			//background:transparent;
+			margin-top:-1.3em;
+			.imprint & {
+				margin-top:-0.8em;
+				margin-bottom:0.2em;
+			}
+			padding:0;
+			border-top:0;
+			border-left:0;
+			border-right:0;
+			width:auto;
+			display:inline;
+			//@include underlined($blue);
+		}
+		.no-touch & {
+			&:hover {
+				border-color:$red;
+				color:$red;
+			}
+		}
 	}
 	&.blackLink {
 		color:black;
+		.darkSkin & {
+			color:white;
+		}
 	}
 }
 
@@ -91,6 +125,10 @@ ol {
 	li {
 		padding-left:0.8em;
 		padding-bottom:1.1em;
+		margin-left:20px;
+		@include bp(tablet) {
+			margin-left:0;
+		}
 	}
 }
 
