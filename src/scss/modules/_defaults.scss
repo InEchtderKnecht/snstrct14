@@ -95,6 +95,11 @@ a {
 	}
 }
 
+%h-asul {
+	font-family:'Asul', 'Helvetica Neue', Helvetica, Arial;
+	font-weight:700;
+}
+
 h1, h2, h3, h4 {
 	padding:0;
 	margin:0;
@@ -107,8 +112,7 @@ h3, h4 {
 }
 
 h1, h2 {
-	font-family:'Asul', 'Helvetica Neue', Helvetica, Arial;
-	font-weight:700;
+	@extend %h-asul;
 }
 
 p, label, table, ol {

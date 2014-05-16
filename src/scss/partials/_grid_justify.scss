@@ -10,7 +10,7 @@
     padding:0 2.5%;
     margin-bottom:4%;
     //overflow:hidden;
-    h1,  h3 {
+    h3, h4 {
       line-height:1em;
       margin:0;
       padding:0;
@@ -19,23 +19,26 @@
       margin-bottom:8px;
       max-width:none;
     }
-    .title {
+    h3 {
+      @extend %h-asul;
+      font-size:30px;
       margin-bottom:5px;
     }
-    .label {
+    h4 {
       text-transform:uppercase;
       font-size:16px;
       margin-bottom:8px;
       color:$red;
     }
-    .blue-link {
+    a {
+      font-size:18px;
       display:inline-block;
       font-family:Asul;
       font-weight:600;
       margin-right:100%;
       border-bottom:0.2em solid $blue;
       margin-bottom:4px;
-
+      //margin:4px 0;
     }
     @include bp(tablet) {
       width:50%;
