@@ -16,7 +16,7 @@
 //}
 
 
-.menu_tag {
+.menu_tag, .sinstruct_2014_tag {
 	width:100%;
 	padding:0;
 	@include bp(tablet) {
@@ -28,12 +28,12 @@
 			.logo {
 				//@include underlined(transparent);
 			}
-			.menu_wrap {
+			.menu_wrap, .menuWrap {
 				display:block;
-				padding:1em;
-				height:280px;
-				@include transform(translateY(0%));
-				@include transition-delay(0s, 0.01s);
+				//padding:1em;
+				//height:280px;
+				//@include transform(translateY(0%));
+				//@include transition-delay(0s, 0.01s);
 			}
 		}
 	}
@@ -70,6 +70,7 @@
 		}
 	}
 	.logo {
+		cursor:default;
 		font-size:150%;
 		@include bp(tablet) {
 			font-size:100%;
@@ -77,8 +78,18 @@
 	}
 }
 
-.menu_wrap {
-	display:block;
+.sinstruct_2014_tag {
+	width: auto;
+	cursor:pointer;
+	.logo {
+		@include underlined(black);
+		display:inline-block;
+		width:auto;
+	}
+}
+
+.menu_wrap, .menuWrap {
+	display:none;
 	position:relative;
 	width:100%;
 	height:auto;
@@ -89,14 +100,14 @@
 		min-width:11em;
 		width:60%;
 		//display:none;
-		height:0px;
+		//height:0px;
 		//padding:1em;
 		padding:1em;
-		@include transform(translateY(-600px));
-		@include transition-property(height, transform);
-		@include transition-timing-function(linear, ease);
-		@include transition-duration(0s, 0.5s);
-		@include transition-delay(0.5s, 0.01s);
+		//@include transform(translateY(-600px));
+		//@include transition-property(height, transform);
+		//@include transition-timing-function(linear, ease);
+		//@include transition-duration(0s, 0.5s);
+		//@include transition-delay(0.5s, 0.01s);
 	}
 	@include bp(desktop) {
 		padding:1.2em;

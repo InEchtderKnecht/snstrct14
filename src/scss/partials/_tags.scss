@@ -3,6 +3,7 @@
 	@include transform(translateX(0));
 	display:inline-block;
 	padding:0 1em;
+	width:100%;
 	h1, h2, h3, h4, a {
 		font-size:1.1em;
 		line-height:1.3em;
@@ -22,7 +23,6 @@
 		width:100%;
 		height:auto;
 	}
-	width:100%;
 	@include bp(tablet) {
 		width:auto;
 		padding:0;
@@ -36,7 +36,7 @@
 }
 
 
-.festival_tag {
+.festival_tag, .headline_tag {
 	margin-top:20%;
 	text-align:center;
 	cursor:pointer;
@@ -75,6 +75,11 @@
 	@include bp(desktop) {
 		font-size:180%;
 	}
+}
+
+.headline_tag {
+	margin-top:10%;
+	margin-bottom:5%
 }
 
 .location_tag {

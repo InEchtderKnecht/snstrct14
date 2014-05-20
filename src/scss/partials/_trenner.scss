@@ -1,0 +1,59 @@
+.illu {
+  position:absolute;
+  z-index:-10;
+  pointer-events:none;
+  opacity:0.95;
+  @include transition-duration(0);
+  @include transition-delay(0.45s);
+}
+
+/// START PAGE ///
+
+.trenner_1 {
+  .illu {
+    top: 4.8%;
+    left: 7.2%;
+    width: 56.69%;
+  }
+}
+
+.trenner_2 {
+  .illu {
+    top: 25.5%;
+    left: 52.5%;
+    width: 34.62%;
+  }
+}
+
+.trenner_3 {
+  .illu {
+    top: 1.3%;
+    left: 22.1%;
+    width: 37.81%;
+  }
+}
+
+/// MUSIC ///
+
+.music_trenner_01 {
+  margin:-3% 0 -20% 0;
+  @include bp(tablet) {
+    margin:-10% 0 -48% 0;
+  }
+  .illu {
+    top: 5.6%;
+    left: 22.1%;
+    width: 50%;
+  }
+}
+
+.music_trenner_02 {
+  margin:-3% 0 -3% 0;
+  @include bp(tablet) {
+    margin:-15% 0 -45% 0;
+  }
+}
+
+.music_trenner_03 {
+  margin:-25% 0 0% 0;
+}
