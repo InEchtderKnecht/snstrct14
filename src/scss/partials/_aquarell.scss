@@ -56,7 +56,7 @@
   &.splash_2 {
     @extend .absolute;
     top:21.8%;
-    animation: rot_two 5s infinite ease-in-out;
+    animation: rot_two 5s infinite linear;
     @include bp(phone) {
       top:36.8%;
     } 
@@ -73,10 +73,10 @@
     animation: rot 3.7s infinite linear;
   }
   .trenner_2 & {
-    animation: rot_two 2.9s infinite ease;
+    animation: rot_two 2.9s infinite linear;
   }
   .trenner_3 & {
-    animation: rot_three 4.3s infinite ease;
+    animation: rot_three 4.3s infinite linear;
   }
   -webkit-filter: contrast(1.1) saturate(1);
   filter: contrast(1.1) saturate(1);

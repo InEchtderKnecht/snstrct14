@@ -103,18 +103,18 @@
 	@include bp(desktop) {
 		font-size:270%;
 	}
-	.no-touch & {
-		&:hover {
-			box-shadow:0 0 0 1em white, 0 0 0 1.15em black;
-		}
-	}
-	.darkSkin & {
-		.no-touch & {
-			&:hover {
-				box-shadow:0 0 0 1em black, 0 0 0 1.15em white;
-			}
-		}
-	}
+	//.no-touch & {
+	//	&:hover {
+	//		box-shadow:0 0 0 1em white, 0 0 0 1.15em black;
+	//	}
+	//}
+	//.darkSkin & {
+	//	.no-touch & {
+	//		&:hover {
+	//			box-shadow:0 0 0 1em black, 0 0 0 1.15em white;
+	//		}
+	//	}
+	//}
 }
 
 

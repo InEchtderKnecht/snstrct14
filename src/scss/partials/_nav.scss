@@ -58,7 +58,7 @@
 			font-size:1em;
 			white-space:normal;
 			@include underlined(black);
-			&.active {
+			&.active, &:active {
 				@include underlined(transparent);
 			}
 		}
@@ -80,11 +80,11 @@
 
 .sinstruct_2014_tag {
 	width: auto;
-	cursor:pointer;
 	.logo {
 		@include underlined(black);
 		display:inline-block;
 		width:auto;
+		cursor:pointer;
 	}
 }
 
@@ -130,9 +130,12 @@
 		font-family:'Asul';
 		font-weight:700;
 		border-bottom:0.18em solid transparent;
+		&.active {
+			border-color:white;
+		}
 		.no-touch & {
 			&:hover {
-				border-bottom:0.18em solid white;
+				border-color:white;
 			}
 		}
 	}
