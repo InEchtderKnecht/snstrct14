@@ -21,7 +21,7 @@
 // PARTIALS
 //----------------------------------*/
 
-@import 'partials/_loader.scss';
+//@import 'partials/_loader.scss';
 @import 'partials/_tags.scss';
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
@@ -35,6 +35,7 @@
 @import 'partials/_ticketSale.scss';
 @import 'partials/_states.scss';
 @import 'partials/_vimeo_video.scss';
+@import 'partials/_trenner.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
@@ -53,5 +54,5 @@
 // VIDEO JS // HAS TO BE LAST ONE!
 //----------------------------------*/
 
-@import 'partials/_videojs.scss';
-@import 'partials/_videojs_fix.scss';
+//@import 'partials/_videojs.scss';
+//@import 'partials/_videojs_fix.scss';

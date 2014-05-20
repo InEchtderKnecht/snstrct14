@@ -10,7 +10,7 @@
     padding:0 2.5%;
     margin-bottom:4%;
     //overflow:hidden;
-    h3, h4 {
+    .title, .label {
       line-height:1em;
       margin:0;
       padding:0;
@@ -19,12 +19,12 @@
       margin-bottom:8px;
       max-width:none;
     }
-    h3 {
+    .title {
       @extend %h-asul;
       font-size:30px;
       margin-bottom:5px;
     }
-    h4 {
+    .label {
       text-transform:uppercase;
       font-size:16px;
       margin-bottom:8px;
