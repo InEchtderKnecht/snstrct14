@@ -3,8 +3,8 @@
   z-index:-10;
   pointer-events:none;
   opacity:0.95;
-  @include transition-duration(0);
-  @include transition-delay(0.45s);
+  //@include transition-duration(0);
+  //@include transition-delay(0.45s);
 }
 
 /// START PAGE ///
