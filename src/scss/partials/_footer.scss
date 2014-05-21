@@ -1,0 +1,43 @@
+
+
+.ghostFooter {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 100px 0 200px 0;
+  @include bp(tablet) {
+    margin:120px 0 240px 0;
+  }
+  @include bp(desktop) {
+    margin:140px 0 280px 0;
+  }
+}
+
+.backToTop {
+  a {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: .2em;
+    border-bottom: .23em solid #000;
+    &:before {
+      content: '➳';
+      position: absolute;
+      bottom: 150%;
+      left: 50%;
+      width: 50px;
+      margin-left: -25px;
+      display: inline-block;
+      transform: rotate(-90deg);
+    }
+    .darkSkin & {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}

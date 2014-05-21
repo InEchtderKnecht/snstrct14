@@ -4,28 +4,11 @@
   .illu {
     //display:none;
     visibility:hidden;
-    @include transition-delay(0s);
+    transition-delay:0s;
   }
   input[type="text"], select {
     background:white;
     color:black;
-  }
-  .menu {
-    background:white;
-    color:black;
-    a {
-      color:black;
-      .no-touch & {
-        &:hover {
-          border-color:black;
-        }
-      }
-    }
-  }
-  .menu_tag {
-    .wrap {
-      @include underlined(white);
-    }
   }
   table td {
     border-color:rgb(60,60,60);

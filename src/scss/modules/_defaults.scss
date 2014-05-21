@@ -13,30 +13,31 @@
 }
 
 html {
-	font-size: 100%;
-	height:100%;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 body {
-	padding:0;
-	margin:0;
-	background:white;
-	font: 400 1.1em/1.3em 'Montserrat', 'Helvetica Neue', Helvetica, Arial;
-	color: black;
-	line-height:1.3em;
-	font-weight:normal;
-	width:100%;
-	//overflow:hidden;
-	min-height:100%;
-	position:relative;
-	@include transition(all 0.4s ease);
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font: 400 1.1em/1.3em Montserrat, 'Helvetica Neue', Helvetica, Arial;
+  color: #000;
+  line-height: 1.3em;
+  font-weight: 400;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
 }
 
 .body {
-	width:100%;
-	position:relative;
-	height:auto;
-	overflow:hidden;
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
 }
 
 nav, header, main, footer {

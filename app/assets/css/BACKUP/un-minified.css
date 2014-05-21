@@ -564,11 +564,11 @@ table .hvhb {
   left: auto;
   margin: 0 auto;
 }
-}@media all and (max-width:599px) {
+@media all and (max-width:599px) {
   .menu_tag.menu .wrap, .sinstruct_2014_tag.menu .wrap {
   display: none;
 }
-}@media all and (max-width:599px) {
+@media all and (max-width:599px) {
   .menu_tag.language, .sinstruct_2014_tag.language {
   display: none;
 }

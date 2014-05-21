@@ -1,158 +1,215 @@
 //.navigation {
-//	@include bp(tablet) {
-//		width:$grid * 2;
-//		float:left;
-//		//.no-touch &, .no-js & {
-//			&:hover {
-//				.menu_wrap {
-//					display:block;
-//				}
-//				h1 {
-//					display:none;
-//				}
-//			}
-//		//}
-//	}
+//  @include bp(tablet) {
+//    width:$grid * 2;
+//    float:left;
+//    //.no-touch &, .no-js & {
+//      &:hover {
+//        .menu_wrap {
+//          display:block;
+//        }
+//        h1 {
+//          display:none;
+//        }
+//      }
+//    //}
+//  }
 //}
 
 
-.menu_tag, .sinstruct_2014_tag {
-	width:100%;
-	padding:0;
-	@include bp(tablet) {
-		width:33%;
-		&:hover {
-			//color:$blue;
-			//@include underlined($blue);
-			//z-index:8000;
-			.logo {
-				//@include underlined(transparent);
-			}
-			.menu_wrap, .menuWrap {
-				display:block;
-				//padding:1em;
-				//height:280px;
-				//@include transform(translateY(0%));
-				//@include transition-delay(0s, 0.01s);
-			}
-		}
-	}
-	.wrap {
-		@include underlined(black);
-		cursor:pointer;
-		width:auto;
-		margin:2em auto;
-		display:inline-block;
-		//@include transition(border 0.4s ease);
-		//position: absolute;
-		top: 100%;
-		left: 50%;
-		h1, h3 {
-			white-space:pre;
-		}
-		&.language {
-			@include underlined(transparent);
-		}
-		a {
-			color:black;
-			font-size:1em;
-			white-space:normal;
-			@include underlined(black);
-			&.active, &:active {
-				@include underlined(transparent);
-			}
-		}
-		@include bp(tablet) {
-			position:relative;
-			top:auto;
-			left:auto;
-			margin:0 auto;
-		}
-	}
-	.logo {
-		cursor:default;
-		font-size:150%;
-		@include bp(tablet) {
-			font-size:100%;
-		}
-	}
+.menu_tag {
+  width:100%;
+  padding:0;
+  @include bp(tablet) {
+    width:33%;
+    &:hover {
+      .menu_wrap {
+        display:block;
+      }
+    }
+  }
+  .wrap {
+    cursor: pointer;
+    width: auto;
+    margin: 2em auto;
+    display: inline-block;
+    top: 100%;
+    left: 50%;
+    h1, h3 {
+      white-space:pre;
+    }
+    &.language {
+      @include underlined(transparent);
+    }
+    a {
+      color: #000;
+      font-size: 1em;
+      white-space: normal;
+      border-bottom: .23em solid transparent;
+      .darkSkin & {
+        color:#fff;
+      }
+      &.active, &:active {
+        border-color: #000;
+        .darkSkin & {
+          border-color:#fff;
+        }
+      }
+    }
+    @include bp(tablet) {
+      position:relative;
+      top:auto;
+      left:auto;
+      margin:0 auto;
+    }
+  }
+  &.logo {
+    .wrap {
+      border-bottom: .23em solid #000;
+      cursor: default;
+      font-size: 120%;
+      .darkSkin & {
+        border-color: #fff;
+      }
+      @include bp(tablet) {
+        font-size:100%;
+      }
+    }
+    @include bp(phone) {
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+  }
+  &.menu {
+    @include bp(phone) {
+      .wrap {
+        display:none;
+      }
+      .menu_wrap {
+        display: block;
+      }
+    }
+  }
+  &.language {
+    .wrap {
+      border-bottom: .23em solid transparent;
+      font-size: 70%;
+      a {
+        margin: 0 0.15em;
+      }
+      @include bp(phone) {
+        display:none;
+      }
+    }
+  }
 }
 
 .sinstruct_2014_tag {
-	width: auto;
-	.logo {
-		@include underlined(black);
-		display:inline-block;
-		width:auto;
-		cursor:pointer;
-	}
+  width: auto;
+  .logo {
+    @include underlined(black);
+    display:inline-block;
+    width:auto;
+    cursor:pointer;
+  }
 }
 
 .menu_wrap, .menuWrap {
-	display:none;
-	position:relative;
-	width:100%;
-	height:auto;
-	overflow:hidden;
-	padding:0;
-	margin:0 auto 0 auto;
-	@include bp(tablet) {
-		min-width:11em;
-		width:60%;
-		//display:none;
-		//height:0px;
-		//padding:1em;
-		padding:1em;
-		//@include transform(translateY(-600px));
-		//@include transition-property(height, transform);
-		//@include transition-timing-function(linear, ease);
-		//@include transition-duration(0s, 0.5s);
-		//@include transition-delay(0.5s, 0.01s);
-	}
-	@include bp(desktop) {
-		padding:1.2em;
-	}
+  display:none;
+  position:relative;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  padding:0;
+  margin:0 auto 0 auto;
+  @include bp(tablet) {
+    min-width:11em;
+    width:60%;
+    padding:1em;
+  }
+  @include bp(desktop) {
+    padding:1.2em;
+  }
 }
 
-.menu {
-	width:100%;
-	height:100%;
-	background:black;
-	color:white;
-	list-style:none;
-	padding:1em 0;
-	//border:0.2em solid rgba(0,0,0,0.1);
-	@include bp(desktop) {
-		padding:1.5em 0;
-	}
-	a {
-		color:white;
-		font-family:'Asul';
-		font-weight:700;
-		border-bottom:0.18em solid transparent;
-		&.active {
-			border-color:white;
-		}
-		.no-touch & {
-			&:hover {
-				border-color:white;
-			}
-		}
-	}
+.menu_list {
+  width:100%;
+  height:100%;
+  background:black;
+  color:white;
+  list-style:none;
+  padding:1em 0;
+  .darkSkin & {
+    background:white;
+    color:black;
+  }
+  @include bp(desktop) {
+    padding:1.5em 0;
+  }
+  @include bp(phone) {
+    padding:0;
+    height:auto;
+    li {
+      &:last-child {
+        a {
+          border:0;
+        }
+      }
+    }
+  }
+  a {
+    color:white;
+    font-family:'Asul';
+    font-weight:700;
+    border-bottom:0.18em solid transparent;
+    .no-touch & {
+      &:hover {
+        border-color:white;
+      }
+    }
+    .darkSkin & {
+      color:black;
+      .no-touch & {
+        &:hover {
+          border-color:black;
+        }
+      }
+    }
+    &.active, &:active {
+      border-color:white;
+      .darkSkin & {
+        border-color:black;
+      }
+    }
+    @include bp(phone) {
+      display: block;
+      border-color: #fff;
+      padding: 5px;
+      .darkSkin & {
+        border-color:black;
+      }
+      &.active, &:active {
+        background:$blue;
+        .darkSkin & {
+          color:white;
+        }
+      }
+    }
+  }
 }
 
 
 .date {
-	@include bp(tablet) {
-		width:$grid * 2;
-		float:right;
-	}
+  @include bp(tablet) {
+    width:$grid * 2;
+    float:right;
+  }
 }
 
 .anchor {
-	position:relative;
-	display:block;
-	width:0px;
-	height:0px;
-	font-size:0.01em
+  position:relative;
+  display:block;
+  width:0px;
+  height:0px;
+  font-size:0.01em
 }

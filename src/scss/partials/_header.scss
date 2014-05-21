@@ -1,19 +1,27 @@
 .header {
-	position:relative;
-	width:100%;
-	text-align:center;
-	z-index:1000000;
-	padding:0;
-	white-space:nowrap;
-	//padding-top:1em;
-	@include bp(tablet) {
-		z-index:100;
-		position:absolute;
-		position:fixed;
-		top:3em;
-		left:0px;
-		width:100%;
-		//padding:0;
-		display:block;
-	}
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 1000000;
+  padding: 0;
+  white-space: nowrap;
+  @include bp(tablet) {
+    z-index: 100;
+    position: absolute;
+    position: fixed;
+    top: 1.8em;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+  @include bp(laptop) {
+    top:3em;
+  }
+  @include bp(phone) {
+    //white-space: normal;
+    margin-bottom: 55px;
+    .landingPage & {
+      margin-bottom:0px;
+    }
+  }
 }

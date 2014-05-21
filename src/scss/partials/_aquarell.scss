@@ -47,11 +47,11 @@
 
 
 .aquarell {
-  width:100%;
-  height:auto;
-  position:relative;
-  z-index:10000;
-  pointer-events:none;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10000;
+  pointer-events: none;
   animation: rot 4s infinite linear;
   &.splash_2 {
     @extend .absolute;

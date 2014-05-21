@@ -22,3 +22,10 @@
     display:inline;
   }
 }
+
+.not-phone-i {
+	display:none;
+	@include bp(tablet) {
+		display:inline;
+	}
+}
