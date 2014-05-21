@@ -45,6 +45,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 ## Sinstruct ##
-app/orig_svg
+src/img
+app/orig_png
 app/orig_png
 app/*.zip

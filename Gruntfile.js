@@ -26,6 +26,7 @@ module.exports = function (grunt) {
    * Dynamically load npm tasks
    */
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  var optipng = require('imagemin-optipng');
 
   /**
    * FireShell Grunt config
@@ -143,6 +144,24 @@ module.exports = function (grunt) {
         files: {
           '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>'
         }
+      }
+    },
+
+
+
+    /** imagemin **/
+    imagemin: {
+      trenner: {
+        options: {
+          optimizationLevel: 6,
+          use: [optipng()]
+        },
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'src/img/trenner/sized',   // Src matches are relative to this path
+          src: ['*.{png,jpg,gif}'],       // Actual patterns to match
+          dest: 'app/assets/img/trenner'  // Destination path prefix
+        }]
       }
     },
 
@@ -295,6 +314,10 @@ module.exports = function (grunt) {
     'connect:livereload',
     'open',
     'watch'
+  ]);
+
+  grunt.registerTask('img', [
+    'imagemin:trenner'
   ]);
 
   /**
