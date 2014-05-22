@@ -80,37 +80,6 @@
   }
 }
 
-.footer {
-  pointer-events: none;
-  .imprint {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 2em;
-    a {
-      padding: 1em;
-      display: inline-block;
-      position: relative;
-      text-transform: uppercase;
-      pointer-events: auto;
-      span {
-        border-bottom: .23em solid #000;
-        font-size: 90%;
-        font-weight: 700;
-        .darkSkin & {
-          border-color:#fff;
-        }
-      }
-    }
-  }
-  @include bp(tablet) {
-    height: 0;
-    overflow: visible;
-    width: 100%;
-  }
-}
-
 @media all and (min-width:600px) {
   .musicContainer {
     padding: 18% 0 0;
