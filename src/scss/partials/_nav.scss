@@ -96,6 +96,9 @@
       font-size: 70%;
       a {
         margin: 0 0.15em;
+        &.active {
+          pointer-events:none;
+        }
       }
       @include bp(phone) {
         display:none;

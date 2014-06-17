@@ -1,113 +1,134 @@
 form {
-	position:relative;
-	width:100%;
-	height:auto;
-	//overflow:hidden;
+  position:relative;
+  width:100%;
+  height:auto;
+  //overflow:hidden;
 }
 input, select, button {
-	outline:0;
-	border:0;
-	-webkit-appearance:none;
-	font-family:Asul;
-	font-size:1.1em;
-	background:black;
-	color:white;
-	@include border-top-radius(0px);
-	@include border-bottom-radius(0px);
-	padding:0.4em 0.2em;
-	margin-bottom:0.6em;
-	font-weight:700;
-	clear:both;
-	width:100%;
-	@include bp(tablet) {
-		width:auto;
-	}
+  outline:0;
+  border:0;
+  -webkit-appearance:none;
+  font-family:Asul;
+  font-size:1.1em;
+  background:black;
+  color:white;
+  @include border-top-radius(0px);
+  @include border-bottom-radius(0px);
+  padding:0.4em 0.2em;
+  margin-bottom:0.6em;
+  font-weight:700;
+  clear:both;
+  width:100%;
+  @include bp(tablet) {
+    width:auto;
+  }
 }
 
 select {
-	padding:0.8em;
+  padding:0.8em;
 }
 
 input[type="text"] {
-	padding:0.8em;
-	width:100%;
-	display:block;
-	margin-bottom:0.8em;
+  padding:0.8em;
+  width:100%;
+  display:block;
+  margin-bottom:0.8em;
 }
 
 input[type="submit"], button {
-	//padding:0;
-	background:none;
-	display:block;
-	font-weight:700;
-	cursor:pointer;
-	color:$blue;
-	font-family:Asul;
-	font-weight:700;
-	font-size:1.1em;
-	//background:$blue;
-	//color:white;
-	border:.2em solid $blue;
-	margin-top:0.3em;
-	//@include underlined($blue);
-	&:hover {
-		color:$red;
-		border-color:$red;
-	}
-	&#next {
-		float:right;
-	}
-	@include bp(tablet) {
-		//color:$blue;
-		//background:transparent;
-		display:inline-block;
-		margin-top:0;
-		padding:0;
-		border-top:0;
-		border-left:0;
-		border-right:0;
-		display:inline;
-		//@include underlined($blue);
-	}
-	//&.blueLink {
-	//	font-family:Asul;
-	//	font-weight:700;
-	//	//background:$blue;
-	//	//color:white;
-	//	border:.3em solid $blue;
-	//	margin-top:1em;
-	//	padding:0.4em 0.2em;
-	//}
+  //padding:0;
+  background:none;
+  display:block;
+  font-weight:700;
+  cursor:pointer;
+  color:$blue;
+  font-family:Asul;
+  font-weight:700;
+  font-size:1.1em;
+  //background:$blue;
+  //color:white;
+  border:.2em solid $blue;
+  margin-top:0.3em;
+  //@include underlined($blue);
+  &:hover {
+    color:$red;
+    border-color:$red;
+  }
+  &#next {
+    float:right;
+  }
+  @include bp(tablet) {
+    //color:$blue;
+    //background:transparent;
+    display:inline-block;
+    margin-top:0;
+    padding:0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    display:inline;
+    //@include underlined($blue);
+  }
+  //&.blueLink {
+  //  font-family:Asul;
+  //  font-weight:700;
+  //  //background:$blue;
+  //  //color:white;
+  //  border:.3em solid $blue;
+  //  margin-top:1em;
+  //  padding:0.4em 0.2em;
+  //}
 }
 
 input[type="checkbox"], input[type="radio"] {
-	display:none;
-	&+label {
-		cursor:pointer;
-		margin-top:1em;
-		margin-bottom:1.3em;
-		&:before {
-			content: '.';
-			position:relative;
-			text-align:center;
-			display:inline-block;
-			float:left;
-			line-height:2em;
-			font-weight:bolder;
-			font-family:'Helvetica', 'Arial';
-			margin-right:1em;
-			width:2em;
-			height:2em;
-			//background:$blue;
-			border:0.4em solid black;
-			color:transparent;
-		}
-	}
-	&:checked+label {
-		&:before {
-			content: '\2713';
-			border-color:$blue;
-			color:$blue;
-		}
-	}
+  display:none;
+  &+label {
+    cursor:pointer;
+    margin-top:1em;
+    margin-bottom:1.3em;
+    &:before {
+      content: '.';
+      position:relative;
+      text-align:center;
+      display:inline-block;
+      float:left;
+      line-height:2em;
+      font-weight:bolder;
+      font-family:'Helvetica', 'Arial';
+      margin-right:1em;
+      width:2em;
+      height:2em;
+      //background:$blue;
+      border:0.4em solid black;
+      color:transparent;
+    }
+  }
+  &:checked+label {
+    &:before {
+      content: '\2713';
+      border-color:$blue;
+      color:$blue;
+    }
+  }
+}
+
+.selectWrap {
+  //text-align:center;
+  width:100%;
+  float:right;
+  //margin:0 auto;
+  max-width:420px;
+  label, p {
+    //text-align:center;
+  }
+  label {
+    //font-size:0.9em;
+    margin-bottom:0.4em;
+  }
+  select {
+    //min-width:300px;
+    width:100%;
+    text-align:center;
+    margin-bottom:0.4em;
+  }
 }

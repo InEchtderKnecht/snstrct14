@@ -15,7 +15,10 @@
 }
 
 .festivalContainer {
-  margin: -12% 0 0 0;
+  margin: -45% 0 0% 0;
+  @include bp(tablet) {
+    margin: -39.5% 0 0% 0;
+  }
 }
 
 .videoContainer {
@@ -62,6 +65,18 @@
   }
 }
 
+.artperformanceContainer {
+  @include bp(tablet) {
+    padding: 34% 0 0;
+  }
+}
+
+.infoContainer {
+  @include bp(tablet) {
+    padding: 17% 0 0;
+  }
+}
+
 .section {
   width:100%;
   display:block;
@@ -77,29 +92,5 @@
     padding-top:13em;
     padding-left:6em;
     padding-right:6em;
-  }
-}
-
-@media all and (min-width:600px) {
-  .musicContainer {
-    padding: 18% 0 0;
-  }
-}
-
-@media all and (min-width:1025px) {
-  .musicContainer {
-    padding: 8% 0 0;
-  }
-}
-
-@media all and (min-width:600px) {
-  .artperformanceContainer {
-    padding: 34% 0 0;
-  }
-}
-
-@media all and (min-width:600px) {
-  .infoContainer {
-    padding: 17% 0 0;
   }
 }
