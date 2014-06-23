@@ -57,6 +57,8 @@
     border-bottom: .23em solid #000;
     &:before {
       content: '\27B3';
+      font-family: "Arial Unicode MS", Arial, arial, sans-serif;
+      font-size:22px;
       position: absolute;
       bottom: 150%;
       left: 50%;
