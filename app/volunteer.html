@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="landingPage loading">
+<body class="landingPage loading ">
 
 <div id="loader"></div>
 
@@ -70,7 +70,8 @@
             
       <div class="width-3 relative-1 tag">
 
-<p class="error">Daten gespeichert am 02.07.14 um 19:17:38 Uhr.</p>
+<p class="error">Der eingegebene Ticket Code existiert nicht. Bitte versuche es noch einmal.</p>
+<p class="sucess">Daten gespeichert am 02.07.14 um 19:17:38 Uhr.</p>
 
 	<div>
      <form action="" method="post">
@@ -87,33 +88,39 @@
 	  <p>Bitte gib mindestens drei Bereiche an, in denen du gerne arbeiten würdest.</p>
 	  <div class="checkbox-list">
       <input id="Einlass" type="checkbox" name="Einlass" title="Du kontrollierst die Bändchen am Festivaleingang." checked="checked">
-      <label for="Einlass" title="Du kontrollierst die Bändchen am Festivaleingang.">Einlasskontrolle</label>
+      <label for="Einlass" title="Du kontrollierst die Bändchen am Festivaleingang.">Einlasskontrolle</label><br/>
       <input id="Putzen" type="checkbox" name="Putzen" title="Du sorgst dafür, dass das Festivalgelände sauber bleibt." checked="checked">
-      <label for="Putzen" title="Du sorgst dafür, dass das Festivalgelände sauber bleibt.">Putz Team (nur insgesamt ca. 5 Stunden!)</label>
+      <label for="Putzen" title="Du sorgst dafür, dass das Festivalgelände sauber bleibt.">Putz Team (nur insgesamt ca. 5 Stunden!)</label><br/>
       <input id="Parken" type="checkbox" name="Parken" title="Du weist den ankommenden Besuchern einen Parkplatz zu." checked="checked">
-      <label for="Parken" title="Du weist den ankommenden Besuchern einen Parkplatz zu.">Parkplatzwärter</label>
+      <label for="Parken" title="Du weist den ankommenden Besuchern einen Parkplatz zu.">Parkplatzwärter</label><br/>
       <input id="Kueche" type="checkbox" name="Kueche" title="Du hilfst dabei, das Festival mit leckerem Essen zu versorgen." checked="checked">
-      <label for="Kueche" title="Du hilfst dabei, das Festival mit leckerem Essen zu versorgen.">Küchen Team</label>
+      <label for="Kueche" title="Du hilfst dabei, das Festival mit leckerem Essen zu versorgen.">Küchen Team</label><br/>
       <input id="Fahrer" type="checkbox" name="Fahrer" title="Du erledigst kleine Transportfahrten auf dem Festivalgelände.">
-      <label for="Fahrer" title="Du erledigst kleine Transportfahrten auf dem Festivalgelände.">Fahrer</label>
+      <label for="Fahrer" title="Du erledigst kleine Transportfahrten auf dem Festivalgelände.">Fahrer</label><br/>
       <input id="Runner" type="checkbox" name="Runner" title="Du versorgst die Bars mit Getränken aus dem Lager." checked="checked">
-      <label for="Runner" title="Du versorgst die Bars mit Getränken aus dem Lager.">Runner</label>
+      <label for="Runner" title="Du versorgst die Bars mit Getränken aus dem Lager.">Runner</label><br/>
       <input id="Bar" class="checkbox" type="checkbox" name="Bar" title="Du verkaufst Getränke an einer der Bars.">
-      <label for="Bar" title="Du verkaufst Getränke an einer der Bars.">Bar</label>
+      <label for="Bar" title="Du verkaufst Getränke an einer der Bars.">Bar</label><br/>
       <input id="Tickets" type="checkbox" name="Tickets" title="Du verkaufst Tickets an der Festivalkasse und gibst die Bändchen aus.">
-      <label for="Tickets" title="Du verkaufst Tickets an der Festivalkasse und gibst die Bändchen aus.">Ticketverkauf</label>
+      <label for="Tickets" title="Du verkaufst Tickets an der Festivalkasse und gibst die Bändchen aus.">Ticketverkauf</label><br/>
      </div>
       <br>
       <label for="Erfahrung">Welche Erfahrungen hast du in den ausgewählten Bereichen?</label><textarea id="Erfahrung" name="Erfahrung"></textarea>
       
       <label for="Tageszeit">Zu welcher Tageszeit würdest du am liebsten arbeiten?</label>
-	  <select name="Tageszeit" id="Tageszeit" size="1">
-       <option value="egal">ist mir egal</option>
-       <option value="Tag">untertags (ca. 10-19 Uhr)</option>
-       <option value="Nacht" selected="selected">nachts (ca. 19-04 Uhr)</option>
+		  <select name="Tageszeit" id="Tageszeit" size="1">
+	       <option value="egal">ist mir egal</option>
+	       <option value="Tag">untertags (ca. 10-19 Uhr)</option>
+	       <option value="Nacht" selected="selected">nachts (ca. 19-04 Uhr)</option>
       </select>
       <label for="Mitteilung">Gibt es noch etwas, das du uns mitteilen möchtest?</label><textarea id="Mitteilung" name="Mitteilung"></textarea>
-      <label for="TicketCode">Gib bitte abschließend noch deinen Ticket Code ein um zu bestätigen, dass du zum Sinstruct kommen wirst. Den Ticketpreis bekommst du nach deiner Arbeitsschicht zurückerstattet.</label><input type="text" name="TicketCode1" id="TicketCode1" value="" maxlength="5">-<input type="text" name="TicketCode2" id="TicketCode2" value="" maxlength="5">
+      <label for="TicketCode">Gib bitte abschließend noch deinen Ticket Code ein um zu bestätigen, dass du zum Sinstruct kommen wirst. Den Ticketpreis bekommst du nach deiner Arbeitsschicht zurückerstattet.</label>
+      	<div class="ticketInput">
+      		<input type="text" name="TicketCode1" id="TicketCode1" value="OI9QY" maxlength="5" readonly="readonly" >
+      		<span class="ticketInputTrenner">–</span>
+      		<input type="text" name="TicketCode2" id="TicketCode2" value="JSF6S" maxlength="5" readonly="readonly"  readonly="readonly" >
+      		<div class="correctCode">&#10004;</div>
+      	</div>
       <br>
       <input type="submit" name="weiter" id="next" value="Daten speichern">
       <input type="hidden" name="token" value="MGUxZDJlMTTSsL9GtT+gMmYo7mClwhClZD83QC2NWQ==">

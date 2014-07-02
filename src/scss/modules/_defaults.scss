@@ -150,14 +150,26 @@ p, ol {
 	}
 }
 
-.error {
-	color:$red;
+%sinstruct-message {
 	display: inline-block;
 	width: auto;
 	padding: 0.5em 0.9em;
-	border: 0.4em solid $red;
+	border-width:0.4em;
+	border-style:solid;
 	margin-bottom: 2.5em;
 	@include transform(rotate(-4deg));
+}
+
+.sucess {
+	@extend %sinstruct-message;
+	color:$green;
+	border-color:$green;
+}
+
+.error {
+	@extend %sinstruct-message;
+	color:$red;
+	border-color:$red;
 }
 
 .inputDetails {
