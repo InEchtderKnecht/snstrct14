@@ -110,6 +110,19 @@ input[type="checkbox"], input[type="radio"] {
       color:$blue;
     }
   }
+  .checkbox-list & {
+    &+label {
+      display: inline-block;
+      width:auto;
+      line-height:2.5em;
+      margin-top:0;
+      margin-bottom:0.5em;
+      &:before {
+        display: inline-block;
+
+      }
+    }
+  }
 }
 
 .selectWrap {
