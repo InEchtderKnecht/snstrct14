@@ -160,7 +160,7 @@ p, ol {
 	@include transform(rotate(-4deg));
 }
 
-.sucess {
+.success {
 	@extend %sinstruct-message;
 	color:$green;
 	border-color:$green;
