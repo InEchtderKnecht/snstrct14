@@ -68,7 +68,6 @@
       margin-top:-8%;
     }
   }
-  //top:5em;
   @include bp(laptop) {
     font-size:130%;
   }
@@ -121,18 +120,6 @@
   @include bp(desktop) {
     font-size:270%;
   }
-  //.no-touch & {
-  //  &:hover {
-  //    box-shadow:0 0 0 1em white, 0 0 0 1.15em black;
-  //  }
-  //}
-  //.darkSkin & {
-  //  .no-touch & {
-  //    &:hover {
-  //      box-shadow:0 0 0 1em black, 0 0 0 1.15em white;
-  //    }
-  //  }
-  //}
 }
 
 
@@ -154,22 +141,48 @@
   @include bp(tablet) {
     padding-top:1.6em;
     text-align:left;
-    h3 {
-      //padding-bottom:0.6em;
-    }
   }
 }
 
 .video_tag {
   padding:0;
-  //z-index:5000;
 }
 
 .portfolio_tag {
   text-align:center;
-  //a {
-  //  color:$blue;
-  //  border-bottom:0.21em solid $blue;
-  //}
 }
 
+.image_tag {
+  font-size:0.1px;
+  position: relative;
+  padding-bottom:10%;
+  text-align: center;
+  .img {
+    vertical-align: middle;
+    height: auto;
+    display: inline-block;
+    width:90%;
+    margin:0 5% 0 5%;
+    padding:5% 0;
+    @include bp(tablet) {
+      width:45%;
+      margin:0 2.5% 0 2.5%;
+      padding:3% 0;
+    }
+    @include bp(laptop) {
+      width:30%;
+      margin:0 1.5% 0 1.5%;
+      padding:2% 0;
+    }
+  }
+  img {
+    position: relative;
+    display: block;
+    padding: 0;
+    border: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+}
